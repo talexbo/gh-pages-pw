@@ -85,7 +85,7 @@ Pandoc convertește Markdown in mai multe formate:[^1]
 $$ \begin{aligned}
 & ax^2 + bx + c = 0 \\
 & \delta=b^2-4ac \\
-$ x_{1,2}=\frac{-b \pm \sqrt{\Delta}}{2a}
+& x_{1,2}=\frac{-b \pm \sqrt{\Delta}}{2a}
 \end{aligned} $$
 
 ## Concluzie
