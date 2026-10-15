@@ -3,6 +3,12 @@
     --text-color: #fff;
     --link-color: #00ff41;
     --link-hover-color: #03fed4;
+    --code-background: #282a36;
+    --code-text: #f8f8f2;
+    --code-border: #6272a4;
+    --code-keyword: #ff79c6;
+    --code-string: #50fa7b;
+    --code-comment: #bd93f9;
 }
 
 html,
@@ -31,4 +37,30 @@ a:hover,
 a:focus,
 a:active {
     color: var(--link-hover-color);
+}
+
+pre {
+    color: var(--code-text);
+    background-color: var(--code-background);
+    border: 1px solid var(--code-border);
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+pre code {
+    color: inherit;
+    background: transparent;
+}
+
+/* Pandoc highlighting */
+code span.kw {
+    color: var(--code-keyword);
+}
+
+code span.st {
+    color: var(--code-string);
+}
+
+code span.co {
+    color: var(--code-comment);
 }
