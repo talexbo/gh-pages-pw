@@ -1,20 +1,34 @@
 :root {
     --page-background: #1a1a2e;
-    --text-color: #fff;
+    --text-color: #ffffff;
+
     --link-color: #00ff41;
     --link-hover-color: #03fed4;
+
     --code-background: #282a36;
     --code-text: #f8f8f2;
     --code-border: #6272a4;
+
     --code-keyword: #ff79c6;
-    --code-string: #50fa7b;
-    --code-comment: #bd93f9;
+    --code-string: #f1fa8c;
+    --code-comment: #d6bcfa;
+    --code-builtin: #8be9fd;
+    --code-function: #50fa7b;
+    --code-number: #bd93f9;
+    --code-constant: #bd93f9;
+    --code-variable: #ffb86c;
+    --code-operator: #ff79c6;
+    --code-type: #8be9fd;
+    --code-attribute: #50fa7b;
+    --code-warning: #ffb86c;
+    --code-error: #ff5555;
 }
 
+/* Page */
 html,
 body {
-    background-color: var(--page-background);
-    color: var(--text-color);
+    background-color: var(--page-background) !important;
+    color: var(--text-color) !important;
 }
 
 p,
@@ -24,43 +38,125 @@ dd,
 dt,
 td,
 th {
-    color: var(--text-color);
+    color: var(--text-color) !important;
 }
 
+/* Links */
 a,
 a:link,
 a:visited {
-    color: var(--link-color);
+    color: var(--link-color) !important;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: var(--link-hover-color);
+    color: var(--link-hover-color) !important;
 }
 
+/* Inline code */
+code:not(pre code) {
+    color: var(--code-text) !important;
+    background-color: var(--code-background) !important;
+}
+
+/* Code blocks */
 pre {
-    color: var(--code-text);
-    background-color: var(--code-background);
-    border: 1px solid var(--code-border);
+    color: var(--code-text) !important;
+    background-color: var(--code-background) !important;
+    border: 1px solid var(--code-border) !important;
     padding: 1rem;
     overflow-x: auto;
 }
 
 pre code {
-    color: inherit;
-    background: transparent;
+    color: var(--code-text) !important;
+    background: transparent !important;
 }
 
-/* Pandoc highlighting */
-code span.kw {
-    color: var(--code-keyword);
+/*
+ * Pandoc syntax-highlighting classes
+ *
+ * kw = keyword
+ * st = string
+ * co = comment
+ * bu = builtin, such as sudo
+ * fu = function
+ * dv/bn/fl = numbers
+ * cn = constant
+ * va = variable
+ * op = operator
+ * dt = data type
+ * at = attribute
+ */
+
+/* Keywords and control flow */
+pre code span.kw,
+pre code span.cf,
+pre code span.im {
+    color: var(--code-keyword) !important;
 }
 
-code span.st {
-    color: var(--code-string);
+/* Strings */
+pre code span.st,
+pre code span.ch,
+pre code span.vs,
+pre code span.sc {
+    color: var(--code-string) !important;
 }
 
-code span.co {
-    color: var(--code-comment);
+/* Comments */
+pre code span.co {
+    color: var(--code-comment) !important;
+}
+
+/* Builtins, including commands such as sudo */
+pre code span.bu {
+    color: var(--code-builtin) !important;
+}
+
+/* Functions */
+pre code span.fu {
+    color: var(--code-function) !important;
+}
+
+/* Numbers */
+pre code span.dv,
+pre code span.bn,
+pre code span.fl {
+    color: var(--code-number) !important;
+}
+
+/* Constants */
+pre code span.cn {
+    color: var(--code-constant) !important;
+}
+
+/* Variables */
+pre code span.va {
+    color: var(--code-variable) !important;
+}
+
+/* Operators */
+pre code span.op {
+    color: var(--code-operator) !important;
+}
+
+/* Types */
+pre code span.dt {
+    color: var(--code-type) !important;
+}
+
+/* Attributes */
+pre code span.at {
+    color: var(--code-attribute) !important;
+}
+
+/* Warnings and errors */
+pre code span.wa {
+    color: var(--code-warning) !important;
+}
+
+pre code span.er {
+    color: var(--code-error) !important;
 }
