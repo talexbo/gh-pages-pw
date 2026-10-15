@@ -72,7 +72,7 @@ export PATH=~/.local/bin
 
 ## Image
 
-![imagine din link ](../images/BL_tubes.jpg)
+![imagine din link ](../images/crai.jpg)
 
 ## Footnote
 
