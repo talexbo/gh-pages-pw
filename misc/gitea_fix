@@ -1,0 +1,22 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+export HOME=/data/data/com.termux/files/home
+export GITEA_WORK_DIR=/data/data/com.termux/files/usr/var/lib/gitea
+
+exec /data/data/com.termux/files/usr/bin/gitea \
+  --work-path "$GITEA_WORK_DIR" \
+  --config "$GITEA_WORK_DIR/custom/conf/app.ini" \
+  web
+
+
+
+
+
+
+
+  grep -nE '^(APP_DATA_PATH|ROOT|PATH)|^\[repository\]' \
+  /actual/path/to/app.ini
+
+
+  <[repository]
+ROOT = /data/data/com.termux/files/usr/var/lib/gitea/repositories

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Orarul meu pe semestrul curent">
+  <title>Orarul meu</title>
+  <!-- TODO 1 (Exercițiul 1): leagă fișierul style.css cu un tag <link> (vezi Fișa 5) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Orarul meu – semestrul 1</h1>
+    <!-- TODO 2 (Exercițiul 1): adaugă numele tău într-un <p> cu class="autor" -->
+    <p class="autor"> Alexandru Tofănel</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Materiile semestrului</h2>
+      <!-- TODO 3 (Exercițiul 1): completează lista cu cel puțin 4 materii.
+           Primul element este scris ca model. Dă și celui de-al doilea un id propriu: materie-2 -->
+      <ul>
+        <li class="materie" id="materie-1">Tehnologii Web</li>
+        <li class="materie" id="materie-2">Analiză Complexă</li>
+        <li class="materie" id="materie-3">Ecuații Diferențiale</li>
+        <li class="materie" id="materie-4">Logică</li>
+        <li class="materie" id="materie-5">Limba Engleză</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Orarul</h2>
+      <!-- TODO 4 (Exercițiul 2): adaugă cel puțin 3 rânduri noi (în total 4 rânduri de date) -->
+      <table>
+        <thead>
+          <tr>
+            <th>Ziua</th>
+            <th>Interval orar</th>
+            <th>Materia</th>
+            <th>Sala</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Luni</td>
+            <td>10:00 – 12:00</td>
+            <td>Tehnologii Web</td>
+            <td>A101</td>
+          </tr>
+          <tr>
+            <td>Marți</td>
+            <td>08:00 – 10:00</td>
+            <td>Analiză Complexă</td>
+            <td>Sala 2</td>
+          </tr>
+          <tr>
+            <td>Miercuri</td>
+            <td>10:00 – 12:00</td>
+            <td>Engleză</td>
+            <td>Online</td>
+          </tr>
+          <tr>
+            <td>Joi</td>
+            <td>10:00 – 12:00</td>
+            <td>Ecuații Diferețiale</td>
+            <td>Online</td>
+          </tr>
+          <tr>
+            <td>Vineri</td>
+            <td>14:00 - 16:00</td>
+            <td>Logică</td>
+            <td>Online</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Imagine</h2>
+      <!-- TODO 5 (Exercițiul 2): adaugă imaginea images/orar.png (sau o imagine proprie), cu atribut alt -->
+      <img src="images/orar.png" alt="orar">
+    </section>
+  </main>
+
+  <footer>
+    <!-- TODO 6 (Exercițiul 2): adaugă un link către orarul de pe site-ul universității -->
+    <a href="https://mateinfo.unitbv.ro/images/2027/Orar/MI_67_I_OrSt1.xlsx" title="orare">Orarul de pe site-ul Facultății</a>
+  </footer>
+</body>
+</html>

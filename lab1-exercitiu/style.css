@@ -1,0 +1,44 @@
+/* style.css – Laborator 1 */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* TODO 7 (Exercițiul 2): stilul comun pentru toate materiile
+   .materie { padding: ...; border: ...; margin: ...; } */
+.materie {
+   padding: 10px;
+   border: 10px;
+   margin: 10px;
+}
+/* TODO 8 (Exercițiul 2): stiluri proprii, cu id, pentru cel puțin 2 materii
+   #materie-1 { color: ...; }
+   #materie-2 { color: ...; } */
+#materie-1 {
+   color: aqua;
+}
+#materie-2 {
+   color: blueviolet;
+}
+/* TODO 9 (Exercițiul 2): bordură pentru tabel
+   table, th, td { border: ...; }
+   Poți adăuga și padding pentru th, td */
+table, th, td {
+   border: solid, 5px;
+}
+th {
+   padding: 2px;
+}
+
+td {
+   border: none;
+   padding: 2px;
+}
+/* TODO 10 (opțional): stil pentru .autor și pentru imagine (de ex. width: 300px;) */
+.autor {
+   color: brown;
+}
+img {
+   width: 100px;
+}
