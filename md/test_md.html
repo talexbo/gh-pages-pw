@@ -88,7 +88,8 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="md/style.css" />
+  <link rel="stylesheet" href="original.css" />
+  <link rel="stylesheet" href="pandoc-overrides.css" />
   <script
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
   type="text/javascript"></script>
@@ -99,25 +100,6 @@
 <p class="author">Alexandru Tofănel</p>
 <p class="date">2026-10-14</p>
 </header>
-<nav id="TOC" role="doc-toc">
-<ul>
-<li><a href="#intro" id="toc-intro">Intro</a>
-<ul>
-<li><a href="#cod" id="toc-cod">Cod</a></li>
-<li><a href="#path" id="toc-path">PATH</a></li>
-<li><a href="#tabel" id="toc-tabel">Tabel</a></li>
-<li><a href="#workflow-exemplu" id="toc-workflow-exemplu">Workflow
-exemplu:</a></li>
-<li><a href="#task-uri" id="toc-task-uri">Task-uri</a></li>
-<li><a href="#link-uri" id="toc-link-uri">Link-uri</a></li>
-<li><a href="#image" id="toc-image">Image</a></li>
-<li><a href="#footnote" id="toc-footnote">Footnote</a></li>
-<li><a href="#ecuații-în-latex" id="toc-ecuații-în-latex">Ecuații în
-LaTeX</a></li>
-<li><a href="#concluzie" id="toc-concluzie">Concluzie</a></li>
-</ul></li>
-</ul>
-</nav>
 <h1 id="intro">Intro</h1>
 <p><strong>Testează</strong> markdown –pandoc–&gt; HTML pentru a inegra
 fișiere markdown în pagini web.</p>
@@ -198,18 +180,15 @@ tema.</label></li>
 <li><a
 href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
 </ul>
-<h2 id="image">Image</h2>
-<figure>
-<img src="../img/crai.jpg" alt="imagine din link" />
-<figcaption aria-hidden="true">imagine din link</figcaption>
-</figure>
+<h2 id="imagine">Imagine</h2>
+<p><img src="../img/crai.jpg" alt="imagine din link" width="200"/></p>
 <h2 id="footnote">Footnote</h2>
 <p>Pandoc convertește Markdown in mai multe formate:<a href="#fn1"
 class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <h2 id="ecuații-în-latex">Ecuații în LaTeX</h2>
 <p><span class="math display">\[ \begin{aligned}
 &amp; ax^2 + bx + c = 0 \\
-&amp; \delta=b^2-4ac \\
+&amp; \Delta=b^2-4ac \\
 &amp; x_{1,2}=\frac{-b \pm \sqrt{\Delta}}{2a}
 \end{aligned} \]</span></p>
 <h2 id="concluzie">Concluzie</h2>
