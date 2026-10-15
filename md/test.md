@@ -72,7 +72,7 @@ export PATH=~/.local/bin
 
 ## Imagine 
 
-<img src="../img/crai.jpg" alt="imagine din link" width="200"/>
+<img src="../img/crai.jpg" alt="imagine din link" width="600"/>
 
 ## Footnote
 
