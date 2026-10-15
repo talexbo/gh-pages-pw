@@ -160,3 +160,13 @@ pre code span.wa {
 pre code span.er {
     color: var(--code-error) !important;
 }
+
+/* Match the scrollbar track to the iframe page background */
+html::-webkit-scrollbar-track {
+    background-color: var(--page-background);
+}
+
+/* Keep Firefox's normal scrollbar appearance */
+html {
+    scrollbar-color: auto;
+}
