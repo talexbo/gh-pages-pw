@@ -170,3 +170,8 @@ html::-webkit-scrollbar-track {
 html {
     scrollbar-color: auto;
 }
+/* Chrome, Edge, and Safari */
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background-color: var(--page-background) !important;
+}
