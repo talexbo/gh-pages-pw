@@ -1,12 +1,12 @@
 ---
-title: "Documentare"
+title: "Test Markdown"
 author: "Alexandru Tofănel"
 date: "2026-10-14"
 ---
 
-# Documentare
+# Intro
 
-Aceasta este o pagină care **testează** markdown --pandoc--> HTML pentru a inegra fișier markdown în pagini web.
+**Testează** markdown --pandoc--> HTML pentru a inegra fișiere markdown în pagini web.
 
 Exemple de:
 
@@ -80,6 +80,14 @@ Pandoc convertește Markdown in mai multe formate:[^1]
 
 [^1]: De exemplu, HTML, PDF, DOCX, și EPUB.
 
-## Final
+## Ecuații în LaTeX
 
-Markdown este ușor de editat și pandoc îmi convertește fișierele în HTML pentru a le vedea în Browsere.
+$$ \begin{aligned}
+& ax^2 + bx + c = 0 \\
+& \delta=b^2-4ac \\
+$ x_{1,2}=\frac{-b \pm \sqrt{\Delta}}{2a}
+\end{aligned} $$
+
+## Concluzie
+
+Markdown este ușor de editat și pandoc convertește fișierele în HTML pentru a le vedea în Browsere.

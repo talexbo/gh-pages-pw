@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Alexandru Tofănel" />
   <meta name="dcterms.date" content="2026-10-14" />
-  <title>Documentare</title>
+  <title>Test Markdown</title>
   <style>
     html {
       color: #1a1a1a;
@@ -167,7 +167,6 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
     /* CSS for syntax highlighting */
     html { -webkit-text-size-adjust: 100%; }
     pre > code.sourceCode { white-space: pre; position: relative; }
@@ -234,16 +233,19 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Documentare</h1>
+<h1 class="title">Test Markdown</h1>
 <p class="author">Alexandru Tofănel</p>
 <p class="date">2026-10-14</p>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#documentare" id="toc-documentare">Documentare</a>
+<li><a href="#intro" id="toc-intro">Intro</a>
 <ul>
 <li><a href="#cod" id="toc-cod">Cod</a></li>
 <li><a href="#path" id="toc-path">PATH</a></li>
@@ -254,13 +256,15 @@ exemplu:</a></li>
 <li><a href="#link-uri" id="toc-link-uri">Link-uri</a></li>
 <li><a href="#image" id="toc-image">Image</a></li>
 <li><a href="#footnote" id="toc-footnote">Footnote</a></li>
-<li><a href="#final" id="toc-final">Final</a></li>
+<li><a href="#ecuații-în-latex" id="toc-ecuații-în-latex">Ecuații în
+LaTeX</a></li>
+<li><a href="#concluzie" id="toc-concluzie">Concluzie</a></li>
 </ul></li>
 </ul>
 </nav>
-<h1 id="documentare">Documentare</h1>
-<p>Aceasta este o pagină care <strong>testează</strong> markdown
-–pandoc–&gt; HTML pentru a inegra fișier markdown în pagini web.</p>
+<h1 id="intro">Intro</h1>
+<p><strong>Testează</strong> markdown –pandoc–&gt; HTML pentru a inegra
+fișiere markdown în pagini web.</p>
 <p>Exemple de:</p>
 <ul>
 <li>Heading-uri</li>
@@ -346,9 +350,15 @@ href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
 <h2 id="footnote">Footnote</h2>
 <p>Pandoc convertește Markdown in mai multe formate:<a href="#fn1"
 class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<h2 id="final">Final</h2>
-<p>Markdown este ușor de editat și pandoc îmi convertește fișierele în
-HTML pentru a le vedea în Browsere.</p>
+<h2 id="ecuații-în-latex">Ecuații în LaTeX</h2>
+<p><span class="math display">\[ \begin{aligned}
+&amp; ax^2 + bx + c = 0 \\
+&amp; \delta=b^2-4ac \\
+$ x_{1,2}=\frac{-b \pm \sqrt{\Delta}}{2a}
+\end{aligned} \]</span></p>
+<h2 id="concluzie">Concluzie</h2>
+<p>Markdown este ușor de editat și pandoc convertește fișierele în HTML
+pentru a le vedea în Browsere.</p>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />

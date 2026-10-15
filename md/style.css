@@ -1,5 +1,16 @@
+html {
+  color-scheme: light dark;
+}
+
 body {
-  max-width: 50em;
+  background-color: #1a1a2e;
   margin: 0 auto;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  color: #fff;
+  max-width: 50em;
   padding: 0 1em;
+}
+
+a {
+  color: #00ff41;
 }
