@@ -1,0 +1,11 @@
+/* ex1.css – Exercițiul 1 */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* TODO 4: culori
+   h1     -> background-color, cu un NUME de culoare (ex. RoyalBlue); poți adăuga color: white;
+   h2     -> color, cu un cod HEX (ex. #B7410E)
+   strong -> color, cu RGB (ex. rgb(0, 100, 0)) */

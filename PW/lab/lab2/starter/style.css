@@ -1,0 +1,12 @@
+/* style.css – Exercițiul 2 */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* TODO 10: h1 -> background-color, cu un NUME de culoare
+   TODO 11: h2 -> color, cu un cod HEX
+   TODO 12: o culoare în RGB (de ex. pe h3 sau pe strong)
+   TODO 13: verifică lizibilitatea: culoare închisă pe fundal deschis sau invers
+            (evită galbenul pe alb!) */
