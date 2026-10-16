@@ -18,36 +18,36 @@
     <p>Pentru că nu am vrut să îl pun pe VPS am ales să îl hostez pe telefonul meu.</p>  
   <h2>Sectiune tehnica</h2>
     <h3>Hosting și Networking</h3>
-    <p>Pentru a găzdui unui site web pe telefon android am folsit următoarele soluții software:</p>
+    <p>Pentru a găzdui unui site web pe telefonul android am folsit următoarele soluții software:</p>
     <ul>
       <li>Termux: un emulator de terminal de Linux pe android.</li>
       <li>Proot-distro: un manager de pseudo-root-uri de linux care rulează pe Termux.</li>
       <li>Pseudo-root de Debian GNU/Linux.</li>
-      <li>Nginx: Serverul pe care rulează pagina web, pe proot Debian, la adresa localhost:8080</li>
-      <li>Cloudflare: Prin daemon-ul cloudflared care îmi crează un tunel către serviciul or de DNS</li>
+      <li>Nginx: Serverul pe care rulează pagina web, în proot de Debian, la adresa localhost:8080</li>
+      <li>Cloudflare: Prin daemon-ul cloudflared care îmi crează un tunel către serviciul lor de DNS</li>
       <li>Registrarul meu, configurat să redirecționeze către Cloudflare.</li>
     </ul>
     <p>Nginx rulează în Debian, expune portul 8080 pe adresa localhost. Termux rulează cloudflared <br>
-    pentur a menține tunelul către Cloudflare. Prin setările DNS de pe domeniu Cloudflaare își face magia <br>
-    iar site-ul este livrat în clienți de web (Browsere). Cloudflare se ocupă și de certificate pentur https <br>
+    pentru a menține tunelul către Cloudflare. Prin setările DNS de pe domeniu, Cloudflare își face magia <br>
+    iar site-ul meu este livrat la clienți de web (Browsere). Cloudflare se ocupă și de certificate pentru https <br>
     și îmi asigură protecție DDOS.
     </p>
-  <h2>Actualizre cu git</h2>
+  <h2>Actualizare cu git</h2>
   <h3>Gitea și cronjob de git fetch din localhost:3000/alex/html.git</h3>
   <ol>
     <li><a href="https://gitea.com" >Gitea</a> e un server personal de git care rulează ca proces separat pe același proot de Debian.</li>
-    <li>Astfel cu un simplu git fetch automat cu cron la 5 minute, eu pot să actualizez acest website de pe orice PC cu git printr-o comanda git push.</li>
+    <li>Astfel cu un simplu git fetch automat de cron la 5 minute, eu pot să actualizez acest website de pe orice PC cu git, printr-o comanda git push.</li>
     <li>To do:
       <ul>
-        <li>Automatizează git push-urie astfel încât acestea să se întâmple automat când repozitorul meu local "html" este modificat.</li>
+        <li>Automatizează git push-urie astfel încât acestea să se întâmple automat când repo-ul meu local "html" este modificat.</li>
         <li>Crește intervalul de update de la 5 min., la 15 min. din setările cron</li>
       </ul>
     </li>
-    <li><em>Misc</em>: Am și o comandă a programului <a href="https://pandoc.org/">pandoc</a> care îmi convertește fișiere markdown în pagini html ce pot fi hostate pe site. Folosesc această soluție pentru a scrie formul matematice în latex în fișiere markdown și în cele din urmă convertie în html.</li>
+    <li><em>Misc</em>: Am și o comandă a programului <a href="https://pandoc.org/">pandoc</a> care îmi convertește fișiere markdown în pagini html ce pot fi hostate pe site. Folosesc această soluție pentru a scrie formule matematice în LaTeX în fișiere markdown care sunt apoi convertie în html.</li>
   </ol>
   <h2>Concluzie</h2>
-  <p>Site-ul funcționeză, <strong>DAR</strong> în corpul P mai ales recepția 4G e câteodată proastă și asta îmi strică tunelul cu cloudflare câteodată. <br>
-  <em>În schimb de obicei funcționează majoritatea timpului, dacă conexiunea este constant bună.</em><br>
+  <p>Site-ul funcționeză, <strong>DAR</strong>, în corpul P mai ales, recepția 4G e câteodată proastă și asta îmi strică tunelul cu cloudflare. <br>
+  <em>În schimb, de obicei, funcționează majoritatea timpului, dacă conexiunea este constant bună.</em><br>
   De asemenea înt-o zi îmi consumă în jur de <b>20%</b> din <b>baterie</b>.</p> 
   <!-- TODO 7: cel puțin 2 paragrafe (minimum 2 propoziții fiecare), despre subiectul ales -->
   <!-- <p>Scrie aici primul paragraf.</p> -->
