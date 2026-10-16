@@ -5,6 +5,18 @@ body {
   margin: 20px;
 }
 
+h1 {
+  background-color: black;
+  color:white;
+}
+h2 {
+  color: #ff0000;
+}
+strong {
+  color:rgb(41, 143, 13);
+}
+
+
 /* TODO 10: h1 -> background-color, cu un NUME de culoare
    TODO 11: h2 -> color, cu un cod HEX
    TODO 12: o culoare în RGB (de ex. pe h3 sau pe strong)
