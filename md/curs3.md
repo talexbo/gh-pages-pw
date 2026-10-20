@@ -36,3 +36,11 @@ $$P_2=2\cdot P_1 + P_0, 2 = 2 + P_0 => P_0 = 0$$
 Sistem ...
 
 
+### Matrice la n
+
+$$
+A=\begin{pmatrix}
+1 & 1 \\
+0 & 1 
+\end{pmatrix}
+$$
