@@ -44,3 +44,18 @@ A=\begin{pmatrix}
 0 & 1 
 \end{pmatrix}
 $$
+
+$$
+A^2=\begin{pmatrix}
+1 & 1 \\
+0 & 1 
+\end{pmatrix} \begin{pmatrix}
+1 & 1 \\
+0 & 1 
+\end{pmatrix}=
+\begin{pmatrix}
+1 & 2 \\
+0 & 1 
+\end{pmatrix}
+$$
+
