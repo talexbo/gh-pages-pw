@@ -1,5 +1,5 @@
 ---
-title: "Wolfram Alpha: Soft Matematic"
+title: "Șiruri - Wolfram"
 author: "Alexandru Tofănel"
 date: "20/10/26"
 ---
