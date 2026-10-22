@@ -1,7 +1,7 @@
 # Laborator 1 – Orarul meu
 
-**Nume și prenume:**
-**Grupa:**
+**Nume și prenume: Tofănel Alexandru Bogdan**
+**Grupa: 10LF152**
 
 ## Jurnal de utilizare AI
 

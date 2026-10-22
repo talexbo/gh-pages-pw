@@ -5,6 +5,7 @@
 
 \usepackage{authblk}%pachet pentru introducerea afilierii
 \usepackage[]{geometry}
+\usepackage{graphicx}%rotește ecuații
 \usepackage{amsthm}
 \usepackage{amsmath, amssymb}
 \usepackage{babel}
@@ -261,7 +262,95 @@
 	\end{pmatrix}
 	\end{aligned}\]
 	\end{obs}
-\section*{To be continued...}
+\subsection*{Pell}
+\[\begin{aligned}
+A \ &=\begin{pmatrix}
+2&1\\
+1&0
+\end{pmatrix}\\
+A^2 &= \begin{pmatrix}
+2&1\\
+1&0
+\end{pmatrix}\begin{pmatrix}
+2&1\\
+1&0
+\end{pmatrix}=\begin{pmatrix}
+5&2\\
+2&1
+\end{pmatrix}\\
+A^3 &=  \begin{pmatrix}
+5&2\\
+2&1
+\end{pmatrix}\begin{pmatrix}
+2&1\\
+1&0
+\end{pmatrix}=\begin{pmatrix}
+12&5\\
+5&2
+\end{pmatrix}\\
+A^3 &= \begin{pmatrix}
+12&5\\
+5&2
+\end{pmatrix}\begin{pmatrix}
+2&1\\
+1&0
+\end{pmatrix}=\begin{pmatrix}
+29&12\\
+12&5
+\end{pmatrix}\\
+&\cdots
+A^n &= \begin{pmatrix}
+P_{n+1}&P_n\\
+P_n&P_{n-1}, \ \ n \ge 1
+\end{pmatrix} 
+\end{aligned}\]
+$$\det{A^n} = \begin{vmatrix}
+P_{n+1}&P_n\\
+p_n & P_{n-1}
+\end{vmatrix}= P_{n+1}\cdot P_{n-1} - {P_n}^2 = (-1)^n$$
+\[\begin{aligned}
+A^n &= \begin{pmatrix}
+2P_n + P_{n-1}& P_n\\
+P_n&P_{n-1}
+\end{pmatrix}=Pn\begin{pmatrix}
+2&1\\
+1&0
+\end{pmatrix}+\begin{pmatrix}
+P_{n-1}&0\\
+0&P_{n-1}
+\end{pmatrix}\\
+&= P_n A+P_{n-1}I_2 
+\end{aligned}\]
+\subsection*{Lucas}
+
+
+
+
+
+\[
+\overset{\scalebox{1.3}{\ \ B}}{
+  \overset{\scalebox{2}[1]{\ \rotatebox{90}{\}}}}{
+    \begin{pmatrix}
+      1 & 2\\
+      2 & -1
+    \end{pmatrix}
+  }
+}
+\cdot
+\overset{\scalebox{1.3}{\ \ A}}{
+  \overset{\scalebox{1.6}[1]{\ \rotatebox{90}{\}}}}{
+    \begin{pmatrix}
+      1 & 1\\
+      1 & 0
+    \end{pmatrix}
+  }
+}
+=
+\begin{pmatrix}
+  3 & 1\\
+  1 & 2
+\end{pmatrix}
+\]
 %	\maketitle
 %	\tableofcontents
 
