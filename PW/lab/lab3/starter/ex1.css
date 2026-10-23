@@ -11,3 +11,16 @@ body {
    th       -> background-color: #dbe9f4;
    .pauza   -> background-color: #fff3cd;   (clasă pentru celula "Pauză de masă":
                în ex1.html adaugă class="pauza" pe celula unită) */
+
+table {
+  border-collapse: collapse;
+}
+th, td {
+  border:1px solid #555;
+  padding: 8px;
+  text-align:left;
+}
+th {
+  background-color:#dbe9f4;
+}
+.pauza {background-color: #fff3cd;}

@@ -16,18 +16,22 @@
        TODO 3: "Programare web" apare pe două rânduri. Păstreaz-o o singură dată,
        în primul rând, și unește-o pe 2 rânduri cu rowspan. Șterge celula duplicat. -->
   <table>
+    <caption>Orarul săptămânii</caption>
+    <thead>
     <tr>
-      <th>Ora</th>
-      <th>Luni</th>
-      <th>Marți</th>
-      <th>Miercuri</th>
+      <th scope="col">Ora</th>
+      <th scope="col">Luni</th>
+      <th scope="col">Marți</th>
+      <th scope="col">Miercuri</th>
     </tr>
+    </thead>
     <tr>
-      <th>8:00–10:00</th>
-      <td>Programare web</td>
-      <td>Matematică</td>
-      <td>Engleză</td>
+      <th scope="row">8:00–10:00</th>
+      <td scope="row">Programare web</td>
+      <td scope="row">Matematică</td>
+      <td scope="row">Engleză</td>
     </tr>
+
     <tr>
       <th>10:00–12:00</th>
       <td>Programare web</td>
@@ -36,9 +40,7 @@
     </tr>
     <tr>
       <th>12:00–13:00</th>
-      <td>Pauză de masă</td>
-      <td>Pauză de masă</td>
-      <td>Pauză de masă</td>
+      <td colspan="3" class="pauza">Pauză de masă</td>
     </tr>
   </table>
 </body>
