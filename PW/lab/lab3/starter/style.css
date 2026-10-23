@@ -1,0 +1,16 @@
+/* style.css – Exercițiul 2 */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* TODO 11: stilul tabelului
+   table   -> border-collapse: collapse;
+   th, td  -> border (1px solid + o culoare), padding, text-align
+   th      -> background-color (o culoare deschisă) și color (text lizibil) */
+
+/* TODO 12: o clasă proprie (de ex. .special) cu alt background-color,
+   folosită în index.html pe cel puțin o celulă (de ex. cea cu colspan) */
+
+/* TODO 13: verifică lizibilitatea: contrast bun între text și fundal peste tot */

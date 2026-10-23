@@ -1,0 +1,13 @@
+/* ex1.css – Exercițiul 1 */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* TODO 4: stilul tabelului
+   table    -> border-collapse: collapse;   (o singură linie între celule)
+   th, td   -> border: 1px solid #555;  padding: 8px;  text-align: left;
+   th       -> background-color: #dbe9f4;
+   .pauza   -> background-color: #fff3cd;   (clasă pentru celula "Pauză de masă":
+               în ex1.html adaugă class="pauza" pe celula unită) */
