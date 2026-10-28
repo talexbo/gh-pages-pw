@@ -10,7 +10,40 @@ body {
    th, td  -> border (1px solid + o culoare), padding, text-align
    th      -> background-color (o culoare deschisă) și color (text lizibil) */
 
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2px solid purple;
+/*border-color: purple;*/
+  padding: 4px;
+  text-align: left;
+}
+
+th {
+  background-color: orchid;
+  color: #180110;
+  text-align: center;
+}
 /* TODO 12: o clasă proprie (de ex. .special) cu alt background-color,
    folosită în index.html pe cel puțin o celulă (de ex. cea cu colspan) */
+
+.special {
+  background-color: rgb(253, 255, 143);
+  color: #180110;
+}
+
+.sectiune {
+  background-color: antiquewhite;
+  text-align: center;
+  color: #180110;
+}
+
+.metode {
+  max-width: 4cm;
+
+}
 
 /* TODO 13: verifică lizibilitatea: contrast bun între text și fundal peste tot */

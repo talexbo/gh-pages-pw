@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
   <meta charset="UTF-8">
   <!-- TODO 5: pune subiectul tău în <title> -->
-  <title>Clătite pufoase cu aromăde vanilie și banană</title>
+  <title>Clătite fără ou.</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- TODO 5: pune subiectul tău și în <h1> -->
-  <h1>Clătite pufoase cu aromăde vanilie și banană</h1>
+  <h1>Clătite fără ou.</h1>
 
   <!-- TODO 6: scrie un paragraf (minimum 2 propoziții) care spune ce arată tabelul -->
-  <p>Aceasta este rețeta mea preferată de clătite în formă tabelară. Tabelul include lista<br>
-  de ingrediente în ordinea în care acestea sunt introduse cu cantitățile și instrucțiuni.</p>
+  <p>Aceasta este rețeta mea preferată de clătite pufoase. Tabelul include lista ingredientelor<br>
+    în ordinea în care acestea sunt folosite cu cantități și instrucțiuni pe coloane.<br>
+    Nu conține ou, pentru că nu îmi place oul în clătite.</p>
 
   <!-- TODO 7: construiește tabelul tău (orar, meniu, program, clasament, listă de prețuri...).
        Cerințe:
@@ -29,7 +32,75 @@
 
   <!-- TODO 10: verifică: fiecare rând însumează același număr de coloane -->
   <table>
+    <caption> Aluat de clătite</caption>
+    <thead>
+      <tr>
+        <th scope="col">Nr.</th>
+        <th scope="col">Numele Ingredientului</th>
+        <th scope="col">Cantitate</th>
+        <th scope="col">Metode</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th colspan="4" class="sectiune">Pudre</th>
+      </tr>
+      <tr>
+        <th scope="row" class="special">1</th>
+        <td>Făină</td>
+        <td>360g</td>
+        <td rowspan="5" class="metode">Se pune într-un bol și se amestecă.</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Amidon pudră</td>
+        <td>4 linguri</td>
+      </tr>
+      <tr>
+        <th scope="row" class="special">3</th>
+        <td>Praf de copt</td>
+        <td>2 linguri sau un plic</td>
+      </tr>
 
+      <tr>
+        <th scope="row">4</th>
+        <td>Zahăr</td>
+        <td>2 linguri</td>
+      </tr>
+      <tr>
+        <th scope="row" class="special">5</th>
+        <td>Sare</td>
+        <td>2 lingurițe</td>
+      </tr>
+      <tr>
+        <th colspan="4" class="sectiune">Ude</th>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Banană mare moale</td>
+        <td>una (sau două mici)</td>
+        <td class="metode">Se zdrobește banana cu furculița sau se dă prin blender și se adaugă în bol. </td>
+      </tr>
+      <tr>
+        <th scope="row" class="special">7</th>
+        <td>Lapte de migdale</td>
+        <td>750ml</td>
+        <td rowspan="2" class="metode">Adaugă încet și amestecă cu mixerul sau cu un tel până când aluatul este doar ușor vâscos când curge.</td>
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td>Oțet</td>
+        <td>2 lingurițe</td>
+      </tr>
+      <tr>
+        <th colspan="4" class="sectiune">Misc</th>
+      </tr>
+      <tr>
+        <th scope="row" class="special">*</th>
+        <td colspan="3">Se pot adăuga câteva picături de esență de migdale sau vanilie.<br> Se gătește într-o tigaie încinsă neaderentă unsă cu foarte puțin<br> unt de cocos.</td>
+      </tr>
+    </tbody>
   </table>
 </body>
+
 </html>
