@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.7)  21 OCT 2026 13:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.7)  28 OCT 2026 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -233,6 +233,9 @@ Package babel Info: Importing font and identification data for 'nil'
 Language: nil 2026/09/27 v26.13 Nil language
 \l@nil=\language92
 ))
+(/opt/texlive/2026/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
 \c@defi=\count308
 \c@teo=\count309
 \c@prop=\count310
@@ -249,20 +252,20 @@ File: l3backend-pdftex.def 2026-09-09 L3 backend support: PDF output (pdfTeX)
 (./document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -321,69 +324,75 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package babel Info: Main language set to 'nil'.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
 
 
 (/opt/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
 
 
 (/opt/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (17.4712pt too wide) detected at line 80
+Overfull \hbox (17.4712pt too wide) detected at line 81
 $[][]$ 
  []
 
 [1
 
 {/opt/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (47.93843pt too wide) detected at line 209
+Overfull \hbox (47.93843pt too wide) detected at line 210
 $[][]$ 
  []
 
 [3]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
-38.
+35.
  (/opt/texlive/2026/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 338.
- [4] (./document.aux)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 335.
+ [4]
+Overfull \hbox (16.52034pt too wide) detected at line 414
+$[] \OML/cmm/m/it/12 A \OT1/cmr/m/n/12 = []    [][]$ 
+ []
+
+[5] (./document.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5261 strings out of 467050
- 85006 string characters out of 5409487
- 538940 words of memory out of 5000000
- 34593 multiletter control sequences out of 15000+600000
+ 5302 strings out of 467050
+ 85744 string characters out of 5409487
+ 539834 words of memory out of 5000000
+ 34630 multiletter control sequences out of 15000+600000
  639722 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,18n,79p,277b,303s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/cm/cmbsy10.720pk> 
-</home/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/amsfonts/cmextra/cmbs
-y8.600pk> </home/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/cm/cmex10.7
-20pk> </opt/texlive/2026/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr6.pk> <
-/home/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.600pk> </hom
-e/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/cm/cmsy10.720pk> </home/al
-ex/.texlive2026/texmf-var/fonts/pk/ljfour/public/cm/cmsy8.600pk> </opt/texlive/
-2026/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr12.pk> </opt/texlive/2026/t
-exmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr8.pk> </home/alex/.texlive2026/te
-xmf-var/fonts/pk/ljfour/public/cm/cmmi8.600pk> </home/alex/.texlive2026/texmf-v
-ar/fonts/pk/ljfour/public/cm/cmmi12.600pk> </home/alex/.texlive2026/texmf-var/f
-onts/pk/ljfour/public/cm/cmbx12.720pk> </opt/texlive/2026/texmf-dist/fonts/pk/l
-jfour/public/cm/dpi600/cmbx10.pk> </home/alex/.texlive2026/texmf-var/fonts/pk/l
-jfour/public/cm/cmbx12.864pk>
-Output written on document.pdf (4 pages, 46277 bytes).
+ 70i,21n,79p,277b,303s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/latex-fonts/line10
+.600pk> </home/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/cm/cmbsy10.72
+0pk> </home/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/amsfonts/cmextra
+/cmbsy8.600pk> </home/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/cm/cme
+x10.720pk> </opt/texlive/2026/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr6.
+pk> </home/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.600pk> 
+</home/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/cm/cmsy10.720pk> </ho
+me/alex/.texlive2026/texmf-var/fonts/pk/ljfour/public/cm/cmsy8.600pk> </opt/tex
+live/2026/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr12.pk> </opt/texlive/2
+026/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr8.pk> </home/alex/.texlive20
+26/texmf-var/fonts/pk/ljfour/public/cm/cmmi8.600pk> </home/alex/.texlive2026/te
+xmf-var/fonts/pk/ljfour/public/cm/cmmi12.600pk> </home/alex/.texlive2026/texmf-
+var/fonts/pk/ljfour/public/cm/cmbx12.720pk> </opt/texlive/2026/texmf-dist/fonts
+/pk/ljfour/public/cm/dpi600/cmbx10.pk> </home/alex/.texlive2026/texmf-var/fonts
+/pk/ljfour/public/cm/cmbx12.864pk>
+Output written on document.pdf (5 pages, 50773 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 219 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

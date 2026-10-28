@@ -9,6 +9,7 @@
 \usepackage{amsthm}
 \usepackage{amsmath, amssymb}
 \usepackage{babel}
+\usepackage{cancel}
 
 \newenvironment{rightdisplay}
   {\begin{flushright}\(\displaystyle}
@@ -322,13 +323,9 @@ P_{n-1}&0\\
 &= P_n A+P_{n-1}I_2 
 \end{aligned}\]
 \subsection*{Lucas}
-
-
-
-
-
 \[
-\overset{\scalebox{1.3}{\ \ B}}{
+\begin{aligned}
+&\overset{\scalebox{1.3}{\ \ B}}{
   \overset{\scalebox{2}[1]{\ \rotatebox{90}{\}}}}{
     \begin{pmatrix}
       1 & 2\\
@@ -349,8 +346,73 @@ P_{n-1}&0\\
 \begin{pmatrix}
   3 & 1\\
   1 & 2
+\end{pmatrix}\\
+&\begin{pmatrix}
+  3 & 1\\
+  1 & 2
 \end{pmatrix}
+\begin{pmatrix}
+  1 & 1\\
+  1 & 0
+\end{pmatrix}
+=
+\begin{pmatrix}
+  4 & 3\\
+  3 & 1
+\end{pmatrix}\\
+&\begin{pmatrix}
+  4 & 3\\
+  3 & 1
+\end{pmatrix}
+\begin{pmatrix}
+  1 & 1\\
+  1 & 0
+\end{pmatrix}
+=
+\begin{pmatrix}
+  7 & 4\\
+  4 & 3
+\end{pmatrix}
+\end{aligned}
 \]
+\[\begin{aligned}
+&B \cdot A^{n-1} = \begin{pmatrix}
+L_{n+1}&L_n\\
+L_n&L_{n-1}
+\end{pmatrix}, n \geq 1\\
+&B\cdot\begin{pmatrix}
+F_n&F_{n-1}\\
+F_{n-1}&F_{n-2}
+\end{pmatrix}= \begin{pmatrix}
+1&2\\
+2&-1
+\end{pmatrix}\cdot\begin{pmatrix}
+F_n&F_{n-1}\\
+F_{n-1}&F_{n-2}
+\end{pmatrix}=\begin{pmatrix}
+F_{n}+2F_{n-1}&F_{n-1}+2F_{n-2}\\
+2F_n-F_{n-1}&2F_{n-1}-F_{n-2}
+\end{pmatrix}=\\
+&L_{n+1}=F_{n}+2F{n-1}\\
+&\boxed{L_n=F_{n-1}+2F_{n-2}}
+\end{aligned}\]
+
+\subsection*{Generalizare}
+\[\left. \begin{aligned}
+&x_{n+2} = k x_{n+1}+x_n & n=0\\
+&x_1=1 & x_2=k x_1 + x_0\\
+&x_2=k & \cancel{k} = \cancel{k} + x_0 
+\end{aligned}\right\} A = \begin{pmatrix}
+k&1\\
+1&0
+\end{pmatrix} \ \ \ \begin{aligned} &k=1, &A^n=\begin{pmatrix}
+x_{n+1}&x_n\\
+x_n&x_{n-1}
+\end{pmatrix} \ \text{(Fib.)}\\
+&&x_{n+2}=x_{x+1}+x_n \  \text{(Fib.)}\\
+&k=2, &x_{n+2}=2x_{x+1}+x_n \ \text{(Pell)}
+\end{aligned}\]
+
 %	\maketitle
 %	\tableofcontents
 
