@@ -1,128 +1,63 @@
 <!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agenția de turism – Vacanțe de vis</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
 <body>
-  <!-- Structura de tabele este dată de profesoară. Scheletul HTML5 (head, lang, charset, link spre style.css)
-       este deja corectat. NU adăuga atribute style="..." și nici border="...": tot aspectul se face în style.css. -->
 
-  <header>
-    <h1>Agenția de turism – Vacanțe de vis</h1>
-    <!-- TODO 1 (style.css): clasa .meniu – fundal albastru, text alb, fără subliniere, majuscule, hover -->
-    <nav>
-      <table class="meniu">
-        <tr>
-          <td><a href="#destinatii">DESTINAȚII</a></td>
-          <td><a href="#last-minute">LAST MINUTE</a></td>
-          <td><a href="#">CITY BREAK</a></td>
-          <td><a href="#">SKI</a></td>
-          <td><a href="#">REVELION</a></td>
-          <td><a href="#">VACANȚE EXOTICE</a></td>
-          <td><a href="#">CROAZIERE</a></td>
-          <td><a href="#">DESPRE NOI</a></td>
-          <td><a href="#contact">CONTACT</a></td>
-        </tr>
-      </table>
-    </nav>
-  </header>
+<h2>Pagina web de turism (cu TABELE)</h2>
 
-  <main>
-    <!-- TODO 4–6 (style.css): zona de sus: banner cu imagine de fundal, lista de oferte, reclama -->
-    <table id="last-minute" class="prima-zona">
-      <tr>
-        <td class="banner">
-          <p>Schi la Bansko, de la 15 euro/persoană/noapte</p>
-        </td>
-        <td class="oferte">
-          <ul>
-            <li>Revelion Paris</li>
-            <li>Ski Bansko</li>
-            <li>Republica Dominicană</li>
-            <li>Croaziere</li>
-            <li>Revelion Thailanda</li>
-            <li>City Break – Europa</li>
-          </ul>
-        </td>
-        <td class="reclama">
-          <p>Litoralul pentru toți</p>
-          <a class="buton" href="#">Vezi detalii</a>
-        </td>
-      </tr>
-    </table>
+<table style="width:100%">
+  <tr>
+    <th>DESTINATII</th>
+    <th>LAST MINUTE</th>
+    <th>....in total 9 celule...</th>
+    <th>CONTACT</th>
+  </tr>
+</table>
+  
+ <table> 
+  <tr>
+    <td>Imagine Bansko</td>
+    <td>
+      <ul>
+       <li> Revelion Paris
+       <li> Ski Bansko 
+       <li> Republica Dominicana
+      </ul>
+     </td>
+    <td>Imagine litoral</td>
+  </tr>
+</table>
+  ----
+ <table> 
+  <tr>
+    <td>Imagine Austria</td>
+    <td>Text Austria</td>
+    <td>Imagine Bahamas</td>
+    <td>Text Bahamas</td>
+    <td>Imagine Belgia</td>
+    <td>Text Belgia</td>
+  </tr>
+  <tr>
+    <td>Imagine ...</td>
+    <td>Text ...</td>
+    <td>Imagine ...</td>
+    <td>Text ...</td>
+    <td>Imagine ...a</td>
+    <td>Text ...</td>
+  </tr>
+  <tr>
+    <td>Imagine ...</td>
+    <td>Text ...</td>
+    <td>Imagine ...</td>
+    <td>Text ...</td>
+    <td>Imagine ...a</td>
+    <td>Text ...</td>
+  </tr>
+</table>
 
-    <!-- TODO 7–10 (style.css): grila de destinații: lățimi, padding, alinieri, imagini, titluri, butoane DETALII.
-         Structura (3 rânduri × 6 celule) rămâne neschimbată. -->
-    <table id="destinatii" class="destinatii">
-      <tr>
-        <td class="poza"><img src="images/austria.png" alt="Austria"></td>
-        <td class="descriere">
-          <h3>AUSTRIA</h3>
-          <p>Țara muzicii și a sporturilor de iarnă. Munți, lacuri și orașe pline de istorie.</p>
-          <a class="buton" href="#">DETALII</a>
-        </td>
-        <td class="poza"><img src="images/bahamas.png" alt="Bahamas"></td>
-        <td class="descriere">
-          <h3>BAHAMAS</h3>
-          <p>Un arhipelag cu peste 700 de insule, cu plaje de nisip fin și apă turcoaz.</p>
-          <a class="buton" href="#">DETALII</a>
-        </td>
-        <td class="poza"><img src="images/belgia.png" alt="Belgia"></td>
-        <td class="descriere">
-          <h3>BELGIA</h3>
-          <p>O țară mică, aproape de Paris, Londra și Amsterdam, bogată în orașe medievale.</p>
-          <a class="buton" href="#">DETALII</a>
-        </td>
-      </tr>
-      <tr>
-        <td class="poza"><img src="images/bulgaria.png" alt="Bulgaria"></td>
-        <td class="descriere">
-          <h3>BULGARIA</h3>
-          <p>Situată în inima Balcanilor, cu capitala la Sofia. Oferă munți și stațiuni la mare.</p>
-          <a class="buton" href="#">DETALII</a>
-        </td>
-        <td class="poza"><img src="images/cehia.png" alt="Cehia"></td>
-        <td class="descriere">
-          <h3>CEHIA</h3>
-          <p>Țară din centrul Europei, cu Praga drept capitală și orașe vechi pline de castele.</p>
-          <a class="buton" href="#">DETALII</a>
-        </td>
-        <td class="poza"><img src="images/cipru.png" alt="Cipru"></td>
-        <td class="descriere">
-          <h3>CIPRU</h3>
-          <p>Insulă la răscrucea dintre Europa, Africa și Asia, destinație de vacanță pe tot anul.</p>
-          <a class="buton" href="#">DETALII</a>
-        </td>
-      </tr>
-      <tr>
-        <td class="poza"><img src="images/croatia.png" alt="Croația"></td>
-        <td class="descriere">
-          <h3>CROAȚIA</h3>
-          <p>O țară care atrage prin coasta Adriaticii, insule numeroase și orașe istorice.</p>
-          <a class="buton" href="#">DETALII</a>
-        </td>
-        <td class="poza"><img src="images/cuba.png" alt="Cuba"></td>
-        <td class="descriere">
-          <h3>CUBA</h3>
-          <p>Cel mai mare stat insular din Caraibe, cu orașe colorate, mașini de epocă și muzică.</p>
-          <a class="buton" href="#">DETALII</a>
-        </td>
-        <td class="poza"><img src="images/egipt.png" alt="Egipt"></td>
-        <td class="descriere">
-          <h3>EGIPT</h3>
-          <p>Țara piramidelor și a Nilului, cu istorie veche și stațiuni la Marea Roșie.</p>
-          <a class="buton" href="#">DETALII</a>
-        </td>
-      </tr>
-    </table>
-  </main>
-
-  <footer id="contact">
-    <p>Contact: office@exemplu.ro · Tel. 0268 000 000 · Brașov</p>
-    <p>Pagină realizată la Laboratorul 4 – Programare web</p>
-  </footer>
 </body>
 </html>

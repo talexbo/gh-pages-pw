@@ -21,6 +21,11 @@ body {
    .meniu a          -> display: block; padding: 12px 6px; color: white; text-decoration: none;
                         font-weight: bold; font-size: 13px; text-transform: uppercase;  */
 
+.meniu {
+   background-color: blue;
+   border-radius: 6px;
+}
+
 /* TODO 3: starea hover și focus a linkurilor din meniu
    .meniu a:hover, .meniu a:focus -> background-color albastru închis; text-decoration: underline; */
 
