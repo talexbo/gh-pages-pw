@@ -4,12 +4,12 @@
 
 /* TODO 0 (exemplu, gata făcut): fundalul paginii și lățimea ei */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 16px;
-  background-color: #eef3f7;
-  color: #1b2a41;
+   font-family: Arial, sans-serif;
+   margin: 0 auto;
+   max-width: 1000px;
+   padding: 16px;
+   background-color: #eef3f7;
+   color: #1b2a41;
 }
 
 /* TODO 1: tabelele pe toată lățimea, o singură linie între celule
@@ -18,6 +18,7 @@ table {
    width: 100%;
    border-collapse: collapse;
 }
+
 /* TODO 2: meniul (table.meniu)
    .meniu            -> background-color albastru, border-radius: 6px
    .meniu td         -> text-align: center; padding: 0;
@@ -28,10 +29,13 @@ table {
    background-color: blue;
    border-radius: 6px;
 }
-.meniu td { /*doar td-uril din clasa menu*/
+
+.meniu td {
+   /*doar td-uril din clasa menu*/
    text-align: center;
    padding: 0px;
 }
+
 .meniu a {
    display: block;
    padding: 12px 6px;
@@ -44,11 +48,13 @@ table {
 
 /* TODO 3: starea hover și focus a linkurilor din meniu
    .meniu a:hover, .meniu a:focus -> background-color albastru închis; text-decoration: underline; */
-.meniu a:hover, .menu a:focus {
- background-color: #0d304d;
- text-decoration: underline;
-border-radius: 6px;
+.meniu a:hover,
+.menu a:focus {
+   background-color: #0d304d;
+   text-decoration: underline;
+   border-radius: 6px;
 }
+
 /* TODO 4: bannerul (td.banner) – imagine de FUNDAL
    .banner -> width: 55%; height: 300px; vertical-align: bottom; padding: 16px; color: white;
               background-image: url("images/bansko.png"); background-size: cover; background-position: center;
@@ -56,11 +62,11 @@ border-radius: 6px;
                 margin: 0; font-size: 22px; font-weight: bold;   (text citibil peste imagine) */
 
 .banner {
-   width:55%;
-   height:300px;
+   width: 55%;
+   height: 300px;
    vertical-align: bottom;
    padding: 16px;
-   color:white;
+   color: white;
    background-image: url("images/bansko.png");
    background-size: cover;
    background-position: center;
@@ -69,7 +75,7 @@ border-radius: 6px;
 .banner p {
    background-color: rgba(0, 0, 0, 0.55);
    display: inline-block;
-   padding:8px 12px;
+   padding: 8px 12px;
    margin: 0;
    font-size: 22px;
    font-weight: bold;
@@ -85,43 +91,76 @@ border-radius: 6px;
    padding: 12px;
    vertical-align: top;
 }
+
 .oferte ul {
    list-style: square;
    margin: 0;
    padding-left: 20px;
 }
-.oferte li{
-   padding:8px 0;
+
+.oferte li {
+   padding: 8px 0;
    border-bottom: 1px dotted #888;
 }
+
 /* TODO 6: reclama (td.reclama) – altă imagine de fundal
    .reclama   -> width: 23%; text-align: center; padding: 16px; color: white;
                  background-image: url("images/litoral.png"); background-size: cover;
    .reclama p -> background-color: rgba(0, 0, 0, 0.55); font-size: 20px; font-weight: bold; padding: 8px;  */
 
 .reclama {
-   width:23%;
+   width: 23%;
    text-align: center;
-   padding:16px;
-   color:white;
+   padding: 16px;
+   color: white;
    background-image: url("images/litoral.png");
    background-size: cover;
 }
-.reclama p{
-   background-color: rgba(0,0,0,0.55);
-   font-size:20px;
+
+.reclama p {
+   background-color: rgba(0, 0, 0, 0.55);
+   font-size: 20px;
    font-weight: bold;
    padding: 8px;
 }
+
 /* TODO 7: grila de destinații (table.destinatii)
    .destinatii td -> padding: 10px; vertical-align: top; border-bottom: 1px solid #c5d3df;
    .poza          -> width: 12%;
    .descriere     -> width: 21%; font-size: 13px;
    .poza img      -> width: 100%; display: block;  */
 
+.destinatii td {
+   padding: 10px;
+   vertical-align: top;
+   border-bottom: 1px solid #c5d3df;
+}
+
+.poza {
+   width: 12%;
+}
+
+.descriere {
+   width: 21%;
+   font-size: 13px;
+}
+
+.poza img {
+   width: 100%;
+   display: block;
+}
 /* TODO 8: titlurile destinațiilor
    .descriere h3 -> margin: 0 0 6px; font-size: 14px; color: #175a94;
    .descriere p  -> margin: 0 0 10px;  */
+
+.descriere h3{
+   margin:0 0 6px;
+   font-size: 14px;
+   color: #175a94;
+}
+.descriere h3{
+   margin:0 0 10px;
+}
 
 /* TODO 9: linkurile ca BUTOANE (clasa .buton, apare în reclamă și în grilă)
    .buton -> display: inline-block; padding: 6px 14px; background-color: verde; color: white;
