@@ -44,7 +44,10 @@ table {
 
 /* TODO 3: starea hover și focus a linkurilor din meniu
    .meniu a:hover, .meniu a:focus -> background-color albastru închis; text-decoration: underline; */
-
+.menu a:hover, .menu a:focus {
+ background-color: #0d304d;
+ text-decoration: underline;
+}
 /* TODO 4: bannerul (td.banner) – imagine de FUNDAL
    .banner -> width: 55%; height: 300px; vertical-align: bottom; padding: 16px; color: white;
               background-image: url("images/bansko.png"); background-size: cover; background-position: center;
