@@ -135,6 +135,9 @@ table {
    vertical-align: top;
    border-bottom: 1px solid #c5d3df;
 }
+.destinatii tr:hover {
+   background-color: rgba(193, 189, 189, 0.389);
+}
 
 .poza {
    width: 12%;
@@ -153,25 +156,72 @@ table {
    .descriere h3 -> margin: 0 0 6px; font-size: 14px; color: #175a94;
    .descriere p  -> margin: 0 0 10px;  */
 
-.descriere h3{
-   margin:0 0 6px;
+.descriere h3 {
+   margin: 0 0 6px;
    font-size: 14px;
    color: #175a94;
 }
-.descriere h3{
-   margin:0 0 10px;
+
+.descriere h3 {
+   margin: 0 0 10px;
 }
 
+/*tr:has(> td.tara:hover) > td.tara {
+  background: red;
+} AI: can I group 2 td's in a div so they react to hovering at the same time ?
+tr:has(> td.pair:hover) selects a <tr> that has a direct child <td class="pair"> being hovered.
+The final > td.pair selects the row’s direct child cells with the pair class.
+
+tr:has(> td:nth-child(1):hover, > td:nth-child(2):hover)
+  > td:nth-child(-n+2) {
+  background: red;
+
+  they are in all 3 columns with 2 paris of <td>s each 
+}*/
+
+#destinatii tr:has(> td:nth-child(1):hover, > td:nth-child(2):hover) > td:nth-child(-n+2),
+#destinatii tr:has(> td:nth-child(3):hover, > td:nth-child(4):hover) > td:nth-child(n+3):nth-child(-n+4),
+#destinatii tr:has(> td:nth-child(5):hover, > td:nth-child(6):hover) > td:nth-child(n+5):nth-child(-n+6) {
+  background: #c5d3df;
+}
+
+#destinatii tr:has(> td:nth-child(1):hover, > td:nth-child(2):hover) > td:nth-child(-n+2) h3,
+#destinatii tr:has(> td:nth-child(3):hover, > td:nth-child(4):hover) > td:nth-child(n+3):nth-child(-n+4) h3,
+#destinatii tr:has(> td:nth-child(5):hover, > td:nth-child(6):hover) > td:nth-child(n+5):nth-child(-n+6) h3 {
+  color:red;
+}
 /* TODO 9: linkurile ca BUTOANE (clasa .buton, apare în reclamă și în grilă)
    .buton -> display: inline-block; padding: 6px 14px; background-color: verde; color: white;
              text-decoration: none; font-weight: bold; font-size: 12px; border-radius: 4px;  */
+.buton {
+   display: inline-block;
+   padding: 6px 14px;
+   background-color: green;
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 12px;
+   border-radius: 4px;
+}
 
 /* TODO 10: hover/focus pentru butoane
    .buton:hover, .buton:focus -> background-color: un verde mai închis (ex. #1b5e20);  */
+.buton:hover,
+.buton:focus {
+   background-color: #2c7831;
+}
 
 /* TODO 11: subsolul
    footer -> text-align: center; padding: 16px; margin-top: 16px; background-color: #143d59; color: white;
              border-radius: 6px;  */
+footer {
+   text-align: center;
+   padding: 16px;
+   margin-top: 16px;
+   background-color: #143d59;
+   color: white;
+   border-radius: 6px;
+}
 
 /* TODO 12 (verificare): contrast bun peste tot (text alb pe fundal închis, text închis pe fundal deschis)
    și toate linkurile arată clar că se pot apăsa. */
