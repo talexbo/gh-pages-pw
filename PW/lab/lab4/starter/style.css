@@ -99,6 +99,20 @@ border-radius: 6px;
                  background-image: url("images/litoral.png"); background-size: cover;
    .reclama p -> background-color: rgba(0, 0, 0, 0.55); font-size: 20px; font-weight: bold; padding: 8px;  */
 
+.reclama {
+   width:23%;
+   text-align: center;
+   padding:16px;
+   color:white;
+   background-image: url("images/litoral.png");
+   background-size: cover;
+}
+.reclama p{
+   background-color: rgba(0,0,0,0.55);
+   font-size:20px;
+   font-weight: bold;
+   padding: 8px;
+}
 /* TODO 7: grila de destinații (table.destinatii)
    .destinatii td -> padding: 10px; vertical-align: top; border-bottom: 1px solid #c5d3df;
    .poza          -> width: 12%;
