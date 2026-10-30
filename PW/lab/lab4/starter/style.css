@@ -14,7 +14,10 @@ body {
 
 /* TODO 1: tabelele pe toată lățimea, o singură linie între celule
    table -> width: 100%; border-collapse: collapse; */
-
+table {
+   width: 100%;
+   border-collapse: collapse;
+}
 /* TODO 2: meniul (table.meniu)
    .meniu            -> background-color albastru, border-radius: 6px
    .meniu td         -> text-align: center; padding: 0;
@@ -24,6 +27,19 @@ body {
 .meniu {
    background-color: blue;
    border-radius: 6px;
+}
+.meniu td { /*doar td-uril din clasa menu*/
+   text-align: center;
+   padding: 0;
+}
+.menu a {
+   display: block;
+   padding: 12px 6px;
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 13px;
+   text-transform: uppercase;
 }
 
 /* TODO 3: starea hover și focus a linkurilor din meniu
