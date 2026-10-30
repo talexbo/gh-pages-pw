@@ -30,9 +30,9 @@ table {
 }
 .meniu td { /*doar td-uril din clasa menu*/
    text-align: center;
-   padding: 0;
+   padding: 0px;
 }
-.menu a {
+.meniu a {
    display: block;
    padding: 12px 6px;
    color: white;
@@ -44,7 +44,7 @@ table {
 
 /* TODO 3: starea hover și focus a linkurilor din meniu
    .meniu a:hover, .meniu a:focus -> background-color albastru închis; text-decoration: underline; */
-.menu a:hover, .menu a:focus {
+.meniu a:hover, .menu a:focus {
  background-color: #0d304d;
  text-decoration: underline;
 }
