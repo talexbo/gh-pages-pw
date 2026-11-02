@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camp Pinewood – Explore</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+  <link rel="stylesheet" href="style.css">   <!-- own CSS AFTER the framework -->
+</head>
+<body>
+
+  <header class="w3-container w3-teal w3-padding-16" id="top">
+    <h1 class="hero-title">Camp Pinewood</h1>
+    <p>Summer camp for children aged 8 to 12 · forest, lake and good friends</p>
+  </header>
+
+  <nav class="w3-bar w3-light-grey" aria-label="Main navigation">
+    <a href="index.html" class="w3-bar-item w3-button nav-link">Home</a>
+    <a href="activities.html" class="w3-bar-item w3-button nav-link">Activities</a>
+    <a href="prices.html" class="w3-bar-item w3-button nav-link">Prices</a>
+    <a href="explore.html" class="w3-bar-item w3-button w3-green" aria-current="page">Explore</a>
+    <a href="contact.html" class="w3-bar-item w3-button nav-link">Contact</a>
+  </nav>
+
+  <main class="w3-container">
+    <h2>Explore the week</h2>
+    <p>Choose a page on the left – it opens in the frame on the right, without leaving this page.</p>
+    <div class="w3-row-padding">
+      <div class="w3-col m3">
+        <!-- target="viewer" = open the link in the iframe whose name is "viewer" -->
+        <ul class="w3-ul w3-card">
+          <li><a href="pages/menu/index.html" target="viewer">Weekly menu</a></li>
+          <li><a href="pages/schedule/index.html" target="viewer">Activity schedule</a></li>
+          <li><a href="prices.html" target="_self">Prices (opens here, in this tab)</a></li>
+          <li><a href="https://www.w3schools.com/w3css/" target="_blank" rel="noopener noreferrer">W3.CSS documentation (new tab)</a></li>
+        </ul>
+      </div>
+      <div class="w3-col m9">
+        <iframe name="viewer" src="pages/menu/index.html" title="Selected camp page" class="viewer"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w3-container w3-dark-grey w3-padding-16">
+    <p>
+      Camp Pinewood · <a href="mailto:info@camp-pinewood.example">info@camp-pinewood.example</a>
+      · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Map (opens in a new tab)</a>
+      · <a href="#top">Back to top</a>
+    </p>
+    <p class="w3-small">Lab 5 reference solution · fictional camp</p>
+  </footer>
+
+</body>
+</html>

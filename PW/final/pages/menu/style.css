@@ -1,0 +1,52 @@
+/* Lab 3 – camp menu (reference solution)
+   Only basic CSS: element selectors, class selectors, colours, fonts, borders, padding. */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  margin: 2rem;
+}
+
+h1 {
+  color: #2e7d32;
+}
+
+/* one line between neighbouring cells instead of two */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+/* every cell gets a border and some space inside – this is what makes it look like Excel */
+th,
+td {
+  border: 1px solid #8a8a8a;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #e8f5e9;
+}
+
+.special {
+  background-color: #fde2e2;
+  font-weight: bold;
+}
+
+.trip {
+  background-color: #fff3cd;
+  font-weight: bold;
+  text-align: center;
+}
+
+.note {
+  font-size: 0.9rem;
+  font-style: italic;
+}

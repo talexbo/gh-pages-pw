@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camp Pinewood – Home</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+  <link rel="stylesheet" href="style.css">   <!-- own CSS AFTER the framework -->
+</head>
+<body>
+
+  <header class="w3-container w3-teal w3-padding-16" id="top">
+    <h1 class="hero-title">Camp Pinewood</h1>
+    <p>Summer camp for children aged 8 to 12 · forest, lake and good friends</p>
+  </header>
+
+  <nav class="w3-bar w3-light-grey" aria-label="Main navigation">
+    <a href="index.html" class="w3-bar-item w3-button w3-green" aria-current="page">Home</a>
+    <a href="activities.html" class="w3-bar-item w3-button nav-link">Activities</a>
+    <a href="prices.html" class="w3-bar-item w3-button nav-link">Prices</a>
+    <a href="explore.html" class="w3-bar-item w3-button nav-link">Explore</a>
+    <a href="contact.html" class="w3-bar-item w3-button nav-link">Contact</a>
+  </nav>
+
+  <main class="w3-container">
+    <section class="w3-section">
+      <h2>Welcome to the forest</h2>
+      <p>One week of sport, art and trips for children aged 8 to 12. Sessions in July and August.</p>
+      <a href="contact.html" class="w3-button w3-green w3-round-large pulse">Book now</a>
+    </section>
+
+    <section class="w3-section">
+      <h2>What we offer</h2>
+      <!-- w3-row + w3-col = Bootstrap's row + col; m4 = one third from medium screens upwards -->
+      <div class="w3-row-padding">
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-card lift">
+            <img src="images/photo1.svg" alt="Children paddling a canoe on the lake" class="w3-image">
+            <div class="w3-container">
+              <h3>Lake and canoes</h3>
+              <p>Swimming and canoeing with trained instructors.</p>
+              <p><a href="activities.html#water">Water activities</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-card lift">
+            <img src="images/photo2.svg" alt="A group hiking on a forest path" class="w3-image">
+            <div class="w3-container">
+              <h3>Forest trips</h3>
+              <p>Hikes, treasure hunts and a night at the campfire.</p>
+              <p><a href="activities.html#forest">Forest activities</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-card lift">
+            <img src="images/photo3.svg" alt="Children painting at a long table" class="w3-image">
+            <div class="w3-container">
+              <h3>Art and theatre</h3>
+              <p>Painting, crafts and a theatre show for the parents.</p>
+              <p><a href="activities.html#art">Art activities</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="w3-container w3-dark-grey w3-padding-16">
+    <p>
+      Camp Pinewood · <a href="mailto:info@camp-pinewood.example">info@camp-pinewood.example</a>
+      · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Map (opens in a new tab)</a>
+      · <a href="#top">Back to top</a>
+    </p>
+    <p class="w3-small">Lab 5 reference solution · fictional camp</p>
+  </footer>
+
+</body>
+</html>
