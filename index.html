@@ -35,12 +35,23 @@
         a {
             color: #00ff41;
         }
+
+        footer img{
+            height:60px;
+        }
+        
+        .bgalb {
+            background-color: white;
+        }
+        .bgnegru {
+            background-color: black;
+        }
     </style>
 </head>
 
 <body>
     <h1>
-	    Notițe Cursuri Informatică:<br>Anul al II-lea, Semestrul I
+        Notițe Cursuri Informatică:<br>Anul al II-lea, Semestrul I
     </h1>
     <h2>Programare Web</h2>
     <h3 class="numeclasa">Curs:</h3>
@@ -55,11 +66,12 @@
     <ul class="lista-centrata">
         <li>PROIECT FINAL: <a href="PW/final/index.html">WORK IN PROGRESS</a></li>
         <li>Lab 1: <a href="PW/lab/lab1-exercitiu/index.html">Temă</a></li>
-        <li>Lab 2: <a href="PW/lab/lab2/starter/ex1.html">Exercițiu</a>; 
-            <a href="PW/lab/lab2/starter/index.html">Temă</a></li>
+        <li>Lab 2: <a href="PW/lab/lab2/starter/ex1.html">Exercițiu</a>;
+            <a href="PW/lab/lab2/starter/index.html">Temă</a>
+        </li>
         <li>Lab 3: <a href="PW/lab/lab3/starter/ex1.html"> Exercițiu</a>;
             <a href="PW/lab/lab3/starter/index.html">Temă</a><br>
-        <a href="img/quiz1.png"><img src="img/quiz1.png" alt="locul 2" style="width: 300px"></a>
+            <a href="img/quiz1.png"><img src="img/quiz1.png" alt="locul 2" style="width: 300px"></a>
         </li>
         <li>Lab 4: <a href="PW/lab/lab4/starter/pagina_turism.html">Temă</a></li>
 
@@ -72,13 +84,16 @@
     </ul>
     <h3 class="numeclasa">Laborator:</h3>
     <ul class="lista-centrata">
-	    <li>Lab 3: <a href="latex/SM_curs2/document.html">Șiruri</a> <a href="latex/SM_curs2/document.pdf">[pdf]</a> <a href="latex/SM_curs2/document.tex">[LaTeX]</a> <span title="mk4htm nu păstrează aceeași aliniere setată în preamblu pe care pdflatex o respectă. Probabil pentru că doar aranjează .png-uri ale ecuațiilor în html."><strong>❕</strong></span> </li>
+        <li>Lab 3: <a href="latex/SM_curs2/document.html">Șiruri</a> <a href="latex/SM_curs2/document.pdf">[pdf]</a> <a
+                href="latex/SM_curs2/document.tex">[LaTeX]</a> <span
+                title="mk4htm nu păstrează aceeași aliniere setată în preamblu pe care pdflatex o respectă. Probabil pentru că doar aranjează .png-uri ale ecuațiilor în html."><strong>❕</strong></span>
+        </li>
 
     </ul>
     <iframe src="md/test_md.html" title="MARKDOWN TEST" width="100%" height="500" loading="lazy">
     </iframe>
 
-    <h4>Notițe</h4>
+    <h4>Log:</h4>
     <ul>
         <li>12/10 - Am reparat sync-ul automat dintre PC și serverul nginx; Am adăugat exemplul din cursul 1, modificat
             pt. că pe elearning era embedded și moștenea css de la elearning.</li>
@@ -88,12 +103,22 @@
         <li>15/10 - Am schimbat serverele de nginx și gitea din termux pe proot de debian pe termux. Asta a rezolvat o
             eroare la gitea. Pe lângă asta, acum /var/www se actualizează periodic cu $git fetch din repo-ul <a
                 href=https://git.alexbogdan.tech/alex/html>ăsta</a> printr-un cronjob.</li>
-    	<li>20/10 - Am trecut de la pandoc md convertit în html la mk4ht htlatex document.tex și rendează ecuațiile în imagini înainte să le așeze în HTML. În schimb o să continui să scriu iframe-uri în markdown.</li>
+        <li>20/10 - Am trecut de la pandoc md convertit în html la mk4ht htlatex document.tex și rendează ecuațiile în
+            imagini înainte să le așeze în HTML. În schimb o să continui să scriu iframe-uri în markdown.</li>
         <li>02/11 - Proiect ultimul lab din ianuarie, min 5 sectiuni (pagini)... elearning, etc.<br>
-         - Am mutat site-ul pe un rpi4 dar am opțiunea de a porni oricând tunelul și daemon-urile de pe telefon ca și backup.</li>
+            - Am mutat site-ul pe un rpi4 dar am opțiunea de a porni oricând tunelul și daemon-urile de pe telefon ca și
+            backup.</li>
     </ul>
     <p style="color:black; background-color:#CCCCCC; font-family: monospace">Acest site <s> este host-uit pe un telefon
-        mobil.</s> este host-uit pe un SoC cu OpenBSD, dar pot sa îl pornesc de pe telefon la nevoie. </p>
+            mobil.</s> este host-uit pe un SoC cu OpenBSD, dar pot sa îl pornesc de pe telefon la nevoie. </p>
+    <footer>
+        <img src="img/cgit.png">
+        <img src="img/gitea.svg">
+        <img class="bgalb" src="img/nginx.svg">
+        <img src="img/cloudflare.png">
+        <img class="bgnegru" src="img/openbsd.svg">
+        <img class="bgnegru" src="img/Logo-UT-MI-ALB-RO.png">
+    </footer>
 </body>
 
 </html>
