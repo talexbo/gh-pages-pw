@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Numele site-ului – Galerie</title>
+  <link rel="stylesheet" href="style.css">   <!-- own stylesheet -->
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <h1 class="hero-title">Numele site-ului</h1>
+    <p>Sloganul site-ului</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-link">Acasă</a>
+    <a href="about.html" class="nav-link">Despre noi</a>
+    <a href="offer.html" class="nav-link">Ofertă</a>
+    <a href="gallery.html" class="nav-link current" aria-current="page">Galerie</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Galerie</h2>
+
+    <!-- TODO 6: at least 6 images in a grid of cards (3 per row from medium screens up).
+         Copy the block below 6 times, change image and alt. Each alt describes the image (never "image1").
+         The files image1.png ... image6.png are in images/ (you can use your own images; write their source in README.md). -->
+    <div class="cards">
+      <div class="col">
+        <div class="card lift">
+          <img src="images/image1.png" alt="Describe the image here" class="fit">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Numele site-ului · <a href="mailto:adresa@exemplu.ro">adresa@exemplu.ro</a>
+      · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Hartă (se deschide într-o filă nouă)</a>
+      · <a href="#top">Înapoi sus</a>
+    </p>
+    <p class="small">Laboratorul 5 · site realizat de (numele tău)</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Numele site-ului – Acasă</title>
+  <link rel="stylesheet" href="style.css">   <!-- own stylesheet -->
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <h1 class="hero-title">Numele site-ului</h1>
+    <p>Sloganul site-ului</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-link current" aria-current="page">Acasă</a>
+    <a href="about.html" class="nav-link">Despre noi</a>
+    <a href="offer.html" class="nav-link">Ofertă</a>
+    <a href="gallery.html" class="nav-link">Galerie</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+
+  <main>
+    <!-- TODO 1: in ALL 5 pages replace "Numele site-ului", "Sloganul site-ului", the e-mail and the footer text
+         (header, <title>, footer) with your own topic. Choose a topic of your own: a club, a shop, a hobby, a band, a trip... -->
+
+    <!-- TODO 2: welcome section: an h2, a short paragraph (2 sentences) and a button-link to contact.html:
+         <a href="contact.html" class="cta pulse">...</a>
+         Add class="fade-in" on the <section> (fade-in is defined in style.css). -->
+    <section>
+
+    </section>
+
+    <!-- TODO 3: three cards. Copy the card below 3 times and change image, alt, title, text and the link.
+         class="col" = a column of the .cards row (TODO 11 in style.css): 3 cards in a row on a wide screen, one under the other on a phone.
+         Each link goes to a SECTION of another page (e.g. about.html#history): the id must exist there (TODO 4). -->
+    <section>
+      <h2>Ce găsești la noi</h2>
+      <div class="cards">
+        <div class="col">
+          <div class="card lift">
+            <img src="images/image1.png" alt="Describe the image here" class="fit">
+            <div class="card-body">
+              <h3>Titlul cardului</h3>
+              <p>Textul cardului.</p>
+              <p><a href="about.html#history">Citește mai mult</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Numele site-ului · <a href="mailto:adresa@exemplu.ro">adresa@exemplu.ro</a>
+      · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Hartă (se deschide într-o filă nouă)</a>
+      · <a href="#top">Înapoi sus</a>
+    </p>
+    <p class="small">Laboratorul 5 · site realizat de (numele tău)</p>
+  </footer>
+
+</body>
+</html>
