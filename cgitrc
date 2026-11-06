@@ -1,4 +1,4 @@
-repo.desc=Repo-urile mele prin SSH
-repo.owner=Alexandru Tofănel
-repo.homepage=https://alexbogdan.tech
-repo.clone-url=https://git.alexbogdan.tech/html.git
+desc=Repo-urile mele prin SSH
+owner=Alexandru Tofănel
+homepage=https://alexbogdan.tech
+clone-url=https://git.alexbogdan.tech/html.git
