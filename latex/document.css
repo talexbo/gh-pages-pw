@@ -5,6 +5,7 @@
 .cmr-6{font-size:50%;}
 .cmmi-12{font-style: italic;}
 .cmmi-8{font-size:66%;font-style: italic;}
+.cmmi-6{font-size:50%;font-style: italic;}
 .cmsy-8{font-size:66%;}
 .cmbx-12{ font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
@@ -166,6 +167,9 @@ td.gather {text-align:center; }
 table.gather {width:100%;}
 div.gather-star {text-align:center;}
 .rotatebox{display: inline-block;}
+dl.enumerate-enumitem{display:grid; grid-template-columns: min-content 1fr; align-items: top; row-gap:0ch;}
+dt.enumerate-enumitem{text-align: right;}
+dd.enumerate-enumitem{margin-left:1ch;}
 .cancel{background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);}
 .bcancel{background: linear-gradient(to bottom left, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);}
 .xcancel{background: linear-gradient(to bottom left, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%), linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);}

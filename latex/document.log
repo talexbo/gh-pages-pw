@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=latex 2026.10.7)  8 NOV 2026 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=latex 2026.10.7)  8 NOV 2026 20:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -198,12 +198,22 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip61
 \thm@headsep=\skip62
 \dth@everypar=\toks31
+) (/opt/texlive/2026/texmf-dist/tex/generic/tex4ht/enumitem-hooks.4ht
+version 2024-09-09-13:35
+) (/opt/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip63
+\enit@outerparindent=\dimen180
+\enit@toks=\toks32
+\enit@inbox=\box56
+\enit@count@id=\count306
+\enitdp@description=\count307
 ) (/opt/texlive/2026/texmf-dist/tex/generic/tex4ht/babel-sty-hooks.4ht
 version 2024-06-20-13:26
 ) (/opt/texlive/2026/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2026/09/27 v26.13 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
-\babel@savecnt=\count306
+\babel@savecnt=\count308
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
 ne 2110.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
@@ -218,11 +228,11 @@ LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?)
 on input line 2118.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
 on input line 2143.
-\U@D=\dimen180
+\U@D=\dimen181
 \l@unhyphenated=\language91
 (/opt/texlive/2026/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count307
+\bbl@dirlevel=\count309
 Package babel Info: You haven't specified a language as a class or package
 (babel)             option. I'll load 'nil'. Reported on input line 4409.
 Package babel Info: Importing font and identification data for 'nil'
@@ -233,14 +243,14 @@ Language: nil 2026/09/27 v26.13 Nil language
 )) (/opt/texlive/2026/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
-\c@defi=\count308
-\c@teo=\count309
-\c@prop=\count310
-\c@lm=\count311
-\c@cor=\count312
-\c@obs=\count313
-\c@ex=\count314
-\c@exemp=\count315
+\c@defi=\count310
+\c@teo=\count311
+\c@prop=\count312
+\c@lm=\count313
+\c@cor=\count314
+\c@obs=\count315
+\c@ex=\count316
+\c@exemp=\count317
 (/opt/texlive/2026/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
 version 2026-03-29-00:00
 --------------------------------------
@@ -253,11 +263,11 @@ version 2026-03-29-00:00
 version 2026-03-11-13:21
 l.882 --- TeX4ht warning --- nonprimitive \everypar ---
 --- needs --- tex4ht document ---
-\tmp:cnt=\count316
+\tmp:cnt=\count318
 \openout15 = `document.tmp'.
 
 (./document.tmp)
-\tmp:dim=\skip63
+\tmp:dim=\skip64
 (./document.xref)
 \:refout=\write3
 \openout3 = `document.xref'.
@@ -354,8 +364,8 @@ version 2026-01-18-07:06
 o use custom a CSS design
 --------------------------------------
 )
-\:tokwrite=\toks32
-\:tokpage=\toks33
+\:tokwrite=\toks33
+\:tokpage=\toks34
 --------------------------------------
 --- Note --- for back links to toc, use the command line option `sections+'
 --------------------------------------
@@ -648,6 +658,16 @@ version 2026-01-04-08:10
 version 2026-07-08-13:21
 ) (/opt/texlive/2026/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2026-01-18-07:06
+)) (/opt/texlive/2026/texmf-dist/tex/generic/tex4ht/enumitem.4ht
+version 2024-09-09-13:35
+(/opt/texlive/2026/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2026-09-25-13:26
+) (/opt/texlive/2026/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2026-01-04-08:10
+) (/opt/texlive/2026/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2026-07-08-13:21
+) (/opt/texlive/2026/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2026-01-18-07:06
 )) (/opt/texlive/2026/texmf-dist/tex/generic/tex4ht/babel.4ht
 version 2025-10-07-12:51
 (/opt/texlive/2026/texmf-dist/tex/generic/tex4ht/html4.4ht
@@ -678,28 +698,28 @@ version 2026-07-08-13:21
 version 2026-01-18-07:06
 )) (/opt/texlive/2026/texmf-dist/tex/latex/l3kernel/l3backend-dvips.def
 File: l3backend-dvips.def 2026-09-09 L3 backend support: dvips
-\l__pdfannot_backend_content_box=\box56
-\l__pdfannot_backend_model_box=\box57
-\g__pdfannot_backend_int=\count317
-\g__pdfannot_backend_link_int=\count318
-\g__pdfannot_backend_link_sf_int=\count319
+\l__pdfannot_backend_content_box=\box57
+\l__pdfannot_backend_model_box=\box58
+\g__pdfannot_backend_int=\count319
+\g__pdfannot_backend_link_int=\count320
+\g__pdfannot_backend_link_sf_int=\count321
 ) (./document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -736,85 +756,106 @@ LaTeX Font Info:    ... okay on input line 38.
 
 Package babel Info: Main language set to 'nil'.
 --- file document.css ---
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
 
 (/opt/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
 
 (/opt/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-l. 41 Writing document.idv[1] (document0x.png)
-l. 47 Writing document.idv[2] (document1x.png)
+l. 42 Writing document.idv[1] (document0x.png)
+l. 48 Writing document.idv[2] (document1x.png)
 [1
 
 ]
-l. 57 Writing document.idv[3] (document2x.png)
+l. 58 Writing document.idv[3] (document2x.png)
 [2]
-l. 62 Writing document.idv[4] (document3x.png)
-l. 70 Writing document.idv[5] (document4x.png)
+l. 63 Writing document.idv[4] (document3x.png)
+l. 71 Writing document.idv[5] (document4x.png)
 [3]
-l. 84 Writing document.idv[6] (document5x.png)
-l. 89 Writing document.idv[7] (document6x.png)
-l. 99 Writing document.idv[8] (document7x.png)
+l. 85 Writing document.idv[6] (document5x.png)
+l. 90 Writing document.idv[7] (document6x.png)
+l. 100 Writing document.idv[8] (document7x.png)
 [4]
-l. 112 Writing document.idv[9] (document8x.png)
+l. 113 Writing document.idv[9] (document8x.png)
 [5]
-l. 144 Writing document.idv[10] (document9x.png)
+l. 145 Writing document.idv[10] (document9x.png)
 [6]
-l. 212 Writing document.idv[11] (document10x.png)
-l. 215 Writing document.idv[12] (document11x.png)
+l. 213 Writing document.idv[11] (document10x.png)
+l. 216 Writing document.idv[12] (document11x.png)
 [7]
-l. 223 Writing document.idv[13] (document12x.png)
-l. 225 Writing document.idv[14] (document13x.png)
+l. 224 Writing document.idv[13] (document12x.png)
+l. 226 Writing document.idv[14] (document13x.png)
 [8]
-l. 267 Writing document.idv[15] (document14x.png)
+l. 268 Writing document.idv[15] (document14x.png)
 [9]
-l. 308 Writing document.idv[16] (document15x.png)
-l. 312 Writing document.idv[17] (document16x.png)
+l. 309 Writing document.idv[16] (document15x.png)
+l. 313 Writing document.idv[17] (document16x.png)
 [10]
-l. 326 Writing document.idv[18] (document17x.png)
+l. 327 Writing document.idv[18] (document17x.png)
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
-35.
+36.
 (/opt/texlive/2026/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 335.
-l. 378 Writing document.idv[19] (document18x.png)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 336.
+l. 379 Writing document.idv[19] (document18x.png)
 [11]
-l. 401 Writing document.idv[20] (document19x.png)
+l. 402 Writing document.idv[20] (document19x.png)
 [12]
-l. 417 Writing document.idv[21] (document20x.png)
-l. 421 Writing document.idv[22] (document21x.png)
-l. 429 Writing document.idv[23] (document22x.png)
+l. 418 Writing document.idv[21] (document20x.png)
+l. 422 Writing document.idv[22] (document21x.png)
+l. 430 Writing document.idv[23] (document22x.png)
 [13]
-l. 432 Writing document.idv[24] (document23x.png)
-l. 437 Writing document.idv[25] (document24x.png)
+l. 433 Writing document.idv[24] (document23x.png)
+l. 438 Writing document.idv[25] (document24x.png)
 [14]
-l. 447 Writing document.idv[26] (document25x.png)
-l. 451 Writing document.idv[27] (document26x.png)
-l. 452 Writing document.idv[28] (document27x.png)
+l. 448 Writing document.idv[26] (document25x.png)
+l. 452 Writing document.idv[27] (document26x.png)
+l. 453 Writing document.idv[28] (document27x.png)
 [15]
-l. 462 Writing document.idv[29] (document28x.png)
-l. 477 Writing document.idv[30] (document29x.png)
+l. 456 Writing document.idv[29] (document28x.png)
+l. 459 Writing document.idv[30] (document29x.png)
+l. 462 Writing document.idv[31] (document30x.png)
 [16]
-l. 481 Writing document.idv[31] (document30x.png)
-[17] (./document.aux)
+l. 469 Writing document.idv[32] (document31x.png)
+[17]
+l. 473 Writing document.idv[33] (document32x.png)
+l. 476 Writing document.idv[34] (document33x.png)
+[18]
+l. 486 Writing document.idv[35] (document34x.png)
+l. 489 Writing document.idv[36] (document35x.png)
+l. 492 Writing document.idv[37] (document36x.png)
+[19]
+l. 499 Writing document.idv[38] (document37x.png)
+[20]
+l. 508 Writing document.idv[39] (document38x.png)
+l. 514 Writing document.idv[40] (document39x.png)
+[21]
+l. 522 Writing document.idv[41] (document40x.png)
+l. 533 Writing document.idv[42] (document41x.png)
+[22]
+l. 551 Writing document.idv[43] (document42x.png)
+l. 566 Writing document.idv[44] (document43x.png)
+[23]
+l. 570 Writing document.idv[45] (document44x.png)
+[24] (./document.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 9663 strings out of 467051
- 143635 string characters out of 5409513
- 710433 words of memory out of 5000000
- 38751 multiletter control sequences out of 15000+600000
+ 10046 strings out of 467051
+ 150776 string characters out of 5409513
+ 718765 words of memory out of 5000000
+ 39117 multiletter control sequences out of 15000+600000
  637928 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,23n,95p,809b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on document.dvi (17 pages, 46472 bytes).
+Output written on document.dvi (24 pages, 62796 bytes).

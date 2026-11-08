@@ -169,6 +169,9 @@ Css: td.gather {text-align:center; }
 Css: table.gather {width:100%;}
 Css: div.gather-star {text-align:center;}
 Css: .rotatebox{display: inline-block;}
+Css: dl.enumerate-enumitem{display:grid; grid-template-columns: min-content 1fr; align-items: top; row-gap:0ch;}
+Css: dt.enumerate-enumitem{text-align: right;}
+Css: dd.enumerate-enumitem{margin-left:1ch;}
 Css: .cancel{background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);}
 Css: .bcancel{background: linear-gradient(to bottom left, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);}
 Css: .xcancel{background: linear-gradient(to bottom left, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%), linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);}
@@ -203,6 +206,20 @@ Css: .xcancel{background: linear-gradient(to bottom left, transparent 47.75%, cu
 --- needs --- document.idv[30] ==> document28x.png ---
 --- needs --- document.idv[31] ==> document29x.png ---
 --- needs --- document.idv[32] ==> document30x.png ---
+--- needs --- document.idv[33] ==> document31x.png ---
+--- needs --- document.idv[34] ==> document32x.png ---
+--- needs --- document.idv[35] ==> document33x.png ---
+--- needs --- document.idv[36] ==> document34x.png ---
+--- needs --- document.idv[37] ==> document35x.png ---
+--- needs --- document.idv[38] ==> document36x.png ---
+--- needs --- document.idv[39] ==> document37x.png ---
+--- needs --- document.idv[40] ==> document38x.png ---
+--- needs --- document.idv[41] ==> document39x.png ---
+--- needs --- document.idv[42] ==> document40x.png ---
+--- needs --- document.idv[43] ==> document41x.png ---
+--- needs --- document.idv[44] ==> document42x.png ---
+--- needs --- document.idv[45] ==> document43x.png ---
+--- needs --- document.idv[46] ==> document44x.png ---
 --- characters ---
 Font("line","10","10","100")
 Font("cmr","12","12","100")
@@ -210,9 +227,11 @@ Font("cmr","8","8","100")
 Font("cmr","6","6","100")
 Font("cmmi","12","12","100")
 Font("cmmi","8","8","100")
+Font("cmmi","6","6","100")
 Font("cmsy","10","10","120")
 Font("cmsy","8","8","100")
 Font("cmex","10","10","120")
+Font("msbm","10","10","120")
 Font("cmbx","12","12","100")
 Font("cmbsy","10","10","120")
 Font("cmbsy","8","8","100")
