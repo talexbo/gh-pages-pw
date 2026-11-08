@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+TEX_DIR="$(cd -- "$SCRIPT_DIR/../latex" && pwd)"
+TEX="$TEX_DIR/document.tex"
+OUT="$TEX_DIR"
+BUILD="$HOME/.builds/$(basename "$TEX_DIR")"
+
+mkdir -p "$OUT" "$BUILD/ht" "$BUILD/pdf"
+cd "$TEX_DIR"
+
+make4ht -B "$BUILD/ht" -d "$OUT" \
+  -f html5+mjcli "$TEX" "mathjax"
+
+pdflatex -interaction=nonstopmode -halt-on-error \
+  -output-directory="$BUILD/pdf" "$TEX"
+pdflatex -interaction=nonstopmode -halt-on-error \
+  -output-directory="$BUILD/pdf" "$TEX"
+
+cp -- "$BUILD/pdf/document.pdf" "$OUT/document.pdf"
+echo "$OUT"
