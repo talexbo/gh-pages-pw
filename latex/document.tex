@@ -475,18 +475,18 @@ $2(P^2_1 + P^2_2 + P^2_3 + \cdots + P^2_n)=P_n P_{n+1}$
 \]
 \[
 	\begin{aligned}
-		\frac{x_{n}}{x_{n+1}x_{n+2}}&=\frac{1}{x_{n+1}}-\frac{k}{x_{n+2}}\ |\cdot k^{n-1}\ \ \  &k^{n-1}\frac{x_{n}}{x_{n+1}x_{n+2}}&=\frac{k^{n-1}}{x_{n+1}}-\frac{k^n}{x_{n+2}}\\
-		\frac{x_{n-1}}{x_{n}x_{n+1}}&=\frac{1}{x_{n}}-\frac{k}{x_{n+1}}\ |\cdot k^{n}& &\cdots \\
-		&\cdots &k^2\frac{x_{3}}{x_{4}x_{5}}&=\frac{k^2}{x_{4}}-\frac{k^3}{x_{5}}\\ \\
-		\frac{x_{2}}{x_{3}x_{4}}&=\frac{1}{x_{3}}-\frac{k}{x_{4}}\ |\cdot k &k\frac{x_{2}}{x_{3}x_{4}}&=\frac{k}{x_{3}}-\frac{k^2}{x_{4}}\\
-		\frac{x_{1}}{x_{2}x_{3}}&=\frac{1}{x_{2}}-\frac{k}{x_{3}}\ |\cdot k &k\frac{x_{1}}{x_{2}x_{3}}&=\frac{k}{x_{2}}-\frac{k^2}{x_{3}}\\
+		\frac{x_{n}}{x_{n+1}x_{n+2}}&=\frac{1}{x_{n+1}}-\frac{k}{x_{n+2}}\ |\cdot k^{n-1}\ \Leftrightarrow  &k^{n-1}\frac{x_{n}}{x_{n+1}x_{n+2}}&=\cancel{\frac{k^{n-1}}{x_{n+1}}}-\frac{k^n}{x_{n+2}}\\
+		\frac{x_{n-1}}{x_{n}x_{n+1}}&=\frac{1}{x_{n}}-\frac{k}{x_{n+1}}\ |\cdot k^{n} \ \ \ \ \ \ \ \cdots & &\cdots \\
+		&\cdots \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \cdots & k^2\frac{x_{3}}{x_{4}x_{5}}&=\cancel{\frac{k^2}{x_{4}}}-\cancel{\frac{k^3}{x_{5}}}\\
+		\frac{x_{2}}{x_{3}x_{4}}&=\frac{1}{x_{3}}-\frac{k}{x_{4}}\ |\cdot k^1 \ \ \ \ \ \ \ \ \ \   \Leftrightarrow &k\frac{x_{2}}{x_{3}x_{4}}&=\cancel{\frac{k}{x_{3}}}-\cancel{\frac{k^2}{x_{4}}}\\
+		\frac{x_{1}}{x_{2}x_{3}}&=\frac{1}{x_{2}}-\frac{k}{x_{3}}\ |\cdot k^0 \ \ \ \ \ \ \ \ \ \   \Leftrightarrow &\frac{x_{1}}{x_{2}x_{3}}&=\frac{1}{x_{2}}-\cancel{\frac{k}{x_{3}}}\\
 		&&\rule{2cm}{0.4pt}&\rule{3cm}{0.4pt}\ _+
 	\end{aligned}
 \]
 \[
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \boxed{\sum_{i=1}^{n} k^{i-1}\frac{x_i}{x_{i+1} x_{i+2}}= k-\frac{k^n}{x_{n+2}}}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \boxed{\sum_{i=1}^{n} k^{i-1}\frac{x_i}{x_{i+1} x_{i+2}}= 1-\frac{k^n}{x_{n+2}}}
 \]
-\[\newline \ \ \  k=1 \rightarrow \text{Fib.}\ \  k=2\rightarrow\text{Pell} ??????\]
+\[\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  k=1 \rightarrow \text{Fib.}\ \  k=2\rightarrow\text{Pell} ??????\]
 
 \subsection*{Cuaternari (Hamilton)}
 \[\begin{aligned}
