@@ -409,9 +409,50 @@ k&1\\
 x_{n+1}&x_n\\
 x_n&x_{n-1}
 \end{pmatrix} \ \text{(Fib.)}\\
-&&x_{n+2}=x_{x+1}+x_n \  \text{(Fib.)}\\
-&k=2, &x_{n+2}=2x_{x+1}+x_n \ \text{(Pell)}
+&&x_{n+2}=x_{n+1}+x_n \  \text{(Fib.)}\\
+&k=2, &x_{n+2}=2x_{n+1}+x_n \ \text{(Pell)}
 \end{aligned}\]
+
+\subsection*{Identități legate de șiruri}
+\[\begin{aligned}
+&F_{n+2}=F_{n+1}+F_n \ |\ \cdot F_{n+1} \ \ F_1=1 \ F_2=1\\
+&F_{n+1}F_{n+2}=F^2_{n+1} + F_n F_{n+1} \Rightarrow
+\end{aligned}\]
+\[\begin{aligned}
+\Rightarrow F^2_{n+1}&=F_{n+1}F_{n+2} - F_n F_{n+1}\\
+n\rightarrow n-1: F^2_{n}&=F_{n}F_{n+1} - F_{n-1} F_{n}\\
+n\rightarrow n-2: F^2_{n-1}&=F_{n-1}F_{n} - F_{n-2} F_{n-1}\\
+&\cdots \\
+n=0 \rightarrow F^2_{1} &= F_1F_2-F_0F_1\\
+\rule{3cm}{0.4pt}&\rule{4cm}{0.4pt}\ _+\\
+\end{aligned}\]
+\[\begin{aligned}
+&\boxed{F^2_1+F^2_2+\cdots+F^2_n=F_n\cdot F_{n+1}}\\
+\end{aligned}\]
+\[
+\begin{aligned}
+&x_{n+2}=kx_{n+1}+x_n, \ \ x_1=1, \ x_2=k=kx_1+x_0 \Rightarrow x_0=0\\
+&\text{generalizarea pentru șirul lui Fibonacci k=1}
+\end{aligned}\]
+\[\begin{aligned}
+x_{n+2}x_{n+1} &= kx^2_{n+1} +x_nx_{n+1}\\
+\Leftrightarrow kx^2_{n+1} &= x_{n+2}x_{n+1} - \cancel{x_nx_{n+1}}\\
+n \rightarrow n-1\ kx^2_{n} &= \cancel{x_{n+1}x_{n}} - \cancel{x_{n-1}x_{n}}\\
+n \rightarrow n-2\ kx^2_{n-1} &= \cancel{x_{n}x_{n-1}} - \cancel{x_{n-2}x_{n-1}}\\
+&\cdots\\
+n = 0\ kx^2_{1} &= \cancel{x_{2}x_{1}} - x_{0}x_{1}\ _{(=0)}\\
+\rule{3cm}{0.4pt}&\rule{4cm}{0.4pt}\ _+
+\end{aligned}
+\]
+\[\begin{aligned}
+&\boxed{k(x^2_1 + x^2_2 + x^2_3 + \cdots + x^2_n)=x_n x_{n+1}} 
+\end{aligned}\]
+Dacă $k=2 \Rightarrow x_n = P_n $ (șirul lui Pelle), și:\\
+$2(P^2_1 + P^2_2 + P^2_3 + \cdots + P^2_n)=P_n P_{n+1}$
+\[
+\sum_{k=1}^{n} \frac{F_k}{F_{k+1} F_{k+2}} = 1 - \frac{1}{F_{n+2}},\ n \geq 1
+\]
+
 
 ...
 
@@ -443,16 +484,16 @@ Mai jos
 \end{aligned}\]
 
 ...
-\section*{Teme:}
-\subsection*{Metoda Blankenship}
-\[
-\begin{pmatrix}
-4932 & 1 & 0 & 0\\
-3324 & 0 & 1 & 0\\
-2013 & 0 & 0 & 1
-\end{pmatrix} =
+%\section*{Teme:}
+%\subsection*{Metoda Blankenship}
+%\[
+%\begin{pmatrix}
+%4932 & 1 & 0 & 0\\
+%3324 & 0 & 1 & 0\\
+%2013 & 0 & 0 & 1
+%\end{pmatrix} =
 
-\]
+%\]
 
 %	\maketitle
 %	\tableofcontents
