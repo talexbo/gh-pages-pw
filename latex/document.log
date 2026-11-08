@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.7)  8 NOV 2026 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.7)  8 NOV 2026 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -249,7 +249,7 @@ Package: cancel 2013/04/12 v2.2 Cancel math terms
 File: l3backend-pdftex.def 2026-09-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count316
 )
-(./document.aux)
+No file document.aux.
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -266,7 +266,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -367,10 +366,10 @@ L3 programming layer <2026-09-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5312 strings out of 467050
- 85878 string characters out of 5409487
- 539834 words of memory out of 5000000
- 34639 multiletter control sequences out of 15000+600000
+ 5309 strings out of 467050
+ 85827 string characters out of 5409487
+ 539923 words of memory out of 5000000
+ 34638 multiletter control sequences out of 15000+600000
  641925 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,21n,79p,277b,303s stack positions out of 10000i,1000n,20000p,200000b,200000s

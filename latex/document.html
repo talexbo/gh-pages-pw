@@ -1,272 +1,612 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
-  "http://www.w3.org/TR/html4/loose.dtd">  
-<html > 
-<head><title></title> 
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
-<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)"> 
-<meta name="originator" content="TeX4ht (https://tug.org/tex4ht/)"> 
-<!-- html --> 
-<meta name="src" content="document.tex"> 
-<link rel="stylesheet" type="text/css" href="document.css"> 
-</head><body 
->
-   
-   <h3 class="likesectionHead">  <a 
- id="x1-1000"></a>&#x0218;iruri</h3>
-   
-   <h4 class="likesubsectionHead">  <a 
- id="x1-2000"></a>Fibonacci</h4>
-<!--l. 41--><p class="noindent" >
-   <div class="math-display" >
-<img 
-src="document0x.png" alt="Fn+2 = Fn+1  + Fn,F1 =  1,F2 = 1
-1,1,2,3,5,8, ...
-                 &#x221A; --
-     Fn+1-   1-+---5
-nli&#x2192;m&#x221E;  F    =    2
-        n" class="math-display" ></div>
-   
-   <h5 class="likesubsubsectionHead">  <a 
- id="x1-3000"></a>Termenul general</h5>
-<!--l. 47--><p class="noindent" >
-   <div class="math-display" >
-<img 
-src="document1x.png" alt="Fn+2 = Fn+1  + Fn,F1 =  1,F2 = 1
-Fn+2 - Fn+1 -  Fn = 0
-                        2
-Ecuat,ie caracteristic&#728;a: x -  x - 1 = 0
-                 1 � &#x221A;5--
-&#x0394; =  5 =&#x003E;  x1,2 = -------
-       (     &#x221A; --)n 2   (     &#x221A; --)n
-          1 +  5           1 -  5
-Fn = A    -------   + B    -------
-         [ (2       )    (   2     )  ]
-                 &#x221A;--  n        &#x221A; -- n
-Fn =  &#x221A;1--   1 +--5-   -   1-----5
-        5       2             2" class="math-display" ></div>
-   
-   <h4 class="likesubsectionHead"> <a 
- id="x1-4000"></a>Lucas</h4>
-<!--l. 57--><p class="noindent" >
-   <div class="math-display" >
-<img 
-src="document2x.png" alt="Ln+2 =  Ln+1 + Ln, F1 = 1,F2 = 3
-1,3,4,7,11, ..." class="math-display" ></div>
-   
-   <h5 class="likesubsubsectionHead"> <a 
- id="x1-5000"></a>Termenul general</h5>
-<!--l. 62--><p class="noindent" >
-
-   <div class="math-display" >
-<img 
-src="document3x.png" alt="Ln+2 - Ln+1  - Ln = 0
-Ecuat ie caracteristic&#728;a: x2 - x - 1 = 0
-     ,              &#x221A; --          (     &#x221A; --)n     (     &#x221A; --)n
-                1 �   5              1 +  5           1 -  5
-&#x0394; =  5 &#x21D2; x1,2 = ------- &#x21D2;  Ln = A    -------   + B    -------
-                   2                   2                2" class="math-display" ></div>
-<!--l. 70--><p class="indent" >
-   <div class="math-display" >
-<img 
-src="document4x.png" alt="                                   )
-L0  = A + B  = 2                   |       (     &#x221A; -)                 (     &#x221A; -)
-        (     &#x221A; -)      (     &#x221A; -) }         1 +---5         &#x221A; --       1-+---5
-L   = A   1-+---5   + B   1-----5  |  &#x21D2;  A      2     + (1 -   5) - A      2      = 1
-  n          2               2     )
-  &#x221A;--   &#x221A;--
-A  5 =   5 &#x21D2;  A =  1 &#x21D2;  B = 1" class="math-display" ></div>
-   
-   <h4 class="likesubsectionHead">  <a 
- id="x1-6000"></a>Pell</h4>
-<!--l. 84--><p class="noindent" >
-   <div class="math-display" >
-
-<img 
-src="document5x.png" alt="Pn+2 = 2Pn+1  + Pn,F1 =  1,F2 = 2
-
-1,2,5,12,29, &#x22C5;&#x22C5;&#x22C5;" class="math-display" ></div>
-   
-   <h5 class="likesubsubsectionHead"> <a 
- id="x1-7000"></a>Termenul general</h5>
-<!--l. 89--><p class="noindent" >
-   <div class="math-display" >
-<img 
-src="document6x.png" alt="Pn+2 - 2Pn+1 -  Pn = 0
-Ecuat,ie caracteristic&#728;a: x2 - 2x - 1 = 0
-                     &#x221A; --
-&#x0394; =  8 &#x21D2; x   =  1-�-2--2-= 1 � &#x221A;2--  P2 = 2 &#x22C5; P1 + P0
-           1,2       2                2 = 2 + P0 &#x21D2; P0 =  0" class="math-display" ></div>
-<!--l. 99--><p class="indent" >
-   <div class="math-display" >
-<img 
-src="document7x.png" alt="{
-  P0 = A  + B =  0                           &#x221A; --          &#x221A; --
-              &#x221A; --         &#x221A; --     &#x21D2;  A (1 +  2 ) - A (1 -  2) = 1
-  Pn =  A(1 +   2) + B (1 +   2) = 1
-   &#x221A; --           --1--          --1--
-2A   2 = 1 &#x21D2; A  = 2&#x221A;2--&#x21D2;  B  = - 2&#x221A;2--" class="math-display" ></div>
-   
-   <h3 class="likesectionHead">  <a 
- id="x1-8000"></a>Forma general&#x0103;</h3>
-   
-   <h4 class="likesubsectionHead">  <a 
- id="x1-9000"></a>Fibonacci</h4>
-<!--l. 112--><p class="noindent" >
-   <div class="math-display" >
-<img 
-src="document8x.png" alt="      (    )
-A  =   1  1
-      (0  1)  (    )    (     )
-  2    1  1    1  1       1  2
-A  =   0  1    0  1   =   0  1
-      (    )  (    )    (     )
-  3    1  2    1  1       1  3
-A  =   0  1    0  1   =   0  1
-
-   &#x22C5;&#x22C5;&#x22C5;
-      (1  n )
-An =
-       0  1" class="math-display" ></div>
-<!--l. 144--><p class="indent" >
-
-   <div class="math-display" >
-<img 
-src="document9x.png" alt="      (    )
-       1  1
-A  =   1  0
-      (    )  (    )    (     )
-A2 =   1  1    1  1   =   2  1
-       1  0    1  0       1  1
-      (2  1)  (1  1)    (3   2)                      (F       F  )
-A3 =                  =                        An =     n+1    n      (*)
-      (1  1)  (1  0)    ( 2  1)                        Fn    Fn-1
-  4    3  2    1  1       5  3
-A  =   2  1    1  0   =   3  2
-      (    )  (    )    (     )
-  5    5  3    1  1       8  5
-A  =   3  2    1  0   =   5  3
-
-   &#x22C5;&#x22C5;&#x22C5;(                 )   (        )   (            )             (     )        (     )
-  n    Fn +  Fn-1   Fn        Fn   Fn      Fn -1   0         n        1  1           1  0
-A  =       F       F      =   F    0   +     0    F      &#x21D2; A   = Fn   1  0  + Fn -1  0  1
-            n        n-1        n                  n-1" class="math-display" ></div>
-<!--l. 212--><p class="indent" >
-   <div class="math-display" >
-<img 
-src="document10x.png" alt="An =  Fn &#x22C5; A = Fn &#x22C5; A + Fn -1 &#x22C5; I2, n &#x2265; 1" class="math-display" ></div>
-<!--l. 215--><p class="indent" >
-
-   <div class="math-display" >
-<img 
-src="document11x.png" alt="          (            |           |
-          |       n    ||Fn+1   Fn  ||                   2          n
-          |{ det (A  ) = | Fn   Fn=1 | = Fn+1 &#x22C5; Fn- 1 - Fn = (detA )
-Din(* ) &#x21D2;            ||    ||                                         &#x21D2;
-          ||( det A =  |1  1 |= - 1
-                     |1  0 |" class="math-display" ></div>
-<!--l. 223--><p class="indent" >
-   <div class="math-display" >
-<img 
-src="document12x.png" alt="&#x21D2;  detAn  = F    &#x22C5; F   -  F 2 = (- 1)n
-             n+1    n-1    n" class="math-display" ></div>
-   <div class="newtheorem">
-<!--l. 224--><p class="noindent" ><span class="head">
-<a 
- id="x1-9001r1"></a>
-<span 
-class="cmbx-12">Observa</span><span 
-class="cmbx-12">&#355;ia 1.</span>  </span>
-   <div class="math-display" >
-<img 
-src="document13x.png" alt="(     )    (     ) (     )
-  Fn+2  =    1  1   Fn+1
-  Fn+1       1  0    Fn
-(     )    (     ) (     )
-  Fn+1  =    1  1    Fn
-   Fn        1  0   Fn -1
-        &#x22C5;&#x22C5;&#x22C5;
- (   )     (     ) (   )     (     )    (    )n  (   )      (    )
-   F2        1  1   F1    +   Fn+1       1  1     F1       n  F 1
-   F1   =    1  0   F0   =&#x21D2;    Fn    =   1  0     F0   = A    F 0" class="math-display" ></div>
-   </div>
-<!--l. 265--><p class="indent" >
-   <h4 class="likesubsectionHead"> <a 
- id="x1-10000"></a>Pell</h4>
-<!--l. 267--><p class="noindent" >
-   <div class="math-display" >
-<img 
-src="document14x.png" alt="     (     )
-A  =   2  1
-       1  0
-     (2   1) (2   1)    (5   2)
-A2 =                 =
-     ( 1  0) ( 1  0)    ( 2  1 )
-  3    5  2    2  1       12  5
-A  =   2  1    1  0  =    5   2
-     (      ) (     )    (       )
-  3    12  5    2  1       29  12
-A  =    5  2    1  0   =   12  5
-                                       (                    )
-   &#x22C5;&#x22C5;&#x22C5;An                             =   Pn+1       Pn
-                                          Pn   Pn -1, n &#x2265;  1" class="math-display" ></div>
-<!--l. 308--><p class="indent" >
-
-   <div class="math-display" >
-<img 
-src="document15x.png" alt="         |           |
-     n   ||Pn+1   Pn  ||                   2       n
-detA  =  | pn   Pn- 1| = Pn+1 &#x22C5; Pn-1 - Pn = (- 1)" class="math-display" ></div>
-<!--l. 312--><p class="indent" >
-   <div class="math-display" >
-<img 
-src="document16x.png" alt="      (                  )       (     )   (            )
-  n    2Pn +  Pn-1   Pn            2  1      Pn- 1   0
-A  =        Pn      Pn -1  = P n   1  0  +     0   Pn -1
-
-   =  PnA +  Pn-1I2" class="math-display" ></div>
-   
-   <h4 class="likesubsectionHead">  <a 
- id="x1-11000"></a>Lucas</h4>
-<!--l. 326--><p class="noindent" >
-   <div class="math-display" >
-<img 
-src="document17x.png" alt="   B         A
-(  }   )   (  }  )   (     )
-  1  2    &#x22C5; 1   1  =   3  1
-  2  - 1    1   0      1  2
-(     ) (     )    (    )
-  3  1    1  1  =   4  3
-  1  2    1  0      3  1
-(4   3) (1   1)    (7  4)
-                =
-  3  1    1  0      4  3" class="math-display" ></div>
-<!--l. 378--><p class="indent" >
-   <div class="math-display" >
-<img 
-src="document18x.png" alt="           (            )
-B &#x22C5; An -1 =  Ln+1   Ln    ,n &#x2265;  1
-              Ln   Ln -1
-   (            )    (      )   (            )   (                           )
-B &#x22C5;   Fn    Fn-1  =   1   2    &#x22C5;  Fn    Fn- 1  =   Fn + 2Fn -1  Fn- 1 + 2Fn -2 =
-     Fn- 1  Fn-2      2   - 1    Fn -1  Fn- 2      2Fn - Fn -1  2Fn- 1 - Fn -2
-Ln+1 =  Fn + 2F n - 1
-|-------------------|
--Ln-=-Fn--1 +-2Fn--2|" class="math-display" ></div>
-   
-   <h4 class="likesubsectionHead">  <a 
- id="x1-12000"></a>Generalizare</h4>
-<!--l. 401--><p class="noindent" >
-   <div class="math-display" >
-
-<img 
-src="document19x.png" alt="                                                                (           )
-                                  )                         n     xn+1   xn
-xn+2 =  kxn+1 + xn          n =  0|}      (     )  k =  1, A   =    xn   xn- 1  (Fib.)
-x1 = 1              x2 = kx1 +  x0  A =    k  1
-                                  |)        1  0               xn+2 = xx+1 + xn (Fib.)
-x2 = k                 //k = //k + x0                k =  2,    xn+2 = 2xx+1 + xn (Pell)" class="math-display" ></div>
-    
-</body></html> 
-
-
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="" />
+  <title>Generalizarea Șirurilor: Fibonacci, Lucas, Pell</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Generalizarea Șirurilor: Fibonacci, Lucas, Pell</h1>
+<p class="author"></p>
+</header>
+<h1 class="unnumbered" id="șiruri">Șiruri</h1>
+<h2 class="unnumbered" id="fibonacci">Fibonacci</h2>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>F</mi><mi>n</mi></msub><mo>,</mo><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><msub><mi>F</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>8</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><munder><mi>lim</mi><mrow><mi>n</mi><mo>→</mo><mi>∞</mi></mrow></munder><mfrac><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>F</mi><mi>n</mi></msub></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+            &amp; F_{n+2} = F_{n+1}+F_{n}, F_1=1, F_2=1 \\
+            &amp; 1,1,2,3,5,8,... \\
+            &amp; \lim\limits_{n\to \infty} \frac{F_{n+1}}{F_n}= \frac{1+\sqrt{5}}{2}
+        \end{aligned}</annotation></semantics></math></p>
+<h3 class="unnumbered" id="termenul-general">Termenul general</h3>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>F</mi><mi>n</mi></msub><mo>,</mo><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><msub><mi>F</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>−</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>F</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mrow><mtext mathvariant="normal">Ecuație caracteristică: </mtext><mspace width="0.333em"></mspace></mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi mathvariant="normal">Δ</mi><mo>=</mo><mn>5</mn><mo>=</mo><mo>&gt;</mo><msub><mi>x</mi><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>1</mn><mo>±</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>F</mi><mi>n</mi></msub><mo>=</mo><mi>A</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msup><mo>+</mo><mi>B</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msup></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>F</mi><mi>n</mi></msub><mo>=</mo><mfrac><mn>1</mn><msqrt><mn>5</mn></msqrt></mfrac><mrow><mo stretchy="true" form="prefix">[</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msup><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msup><mo stretchy="true" form="postfix">]</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}           
+            &amp; F_{n+2} = F_{n+1} + F_{n}, F_1 = 1, F_2 = 1\\
+            &amp; F_{n+2} - F_{n+1} - F_{n} = 0\\
+            &amp; \text{Ecuație caracteristică: } x^2 -x -1 = 0\\
+            &amp;\Delta = 5 =&gt; x_{1,2} = \frac{1 \pm \sqrt{5}}{2}\\
+            &amp;F_n = A\left(\frac{1+\sqrt{5}}{2}\right)^n
+                    + B\left(\frac{1-\sqrt{5}}{2}\right)^n\\
+                &amp; F_n=\frac{1}{\sqrt{5}} \left[ \left(\frac{1+\sqrt{5}}{2}\right)^n-\left(\frac{1-\sqrt{5}}{2}\right)^n \right]
+        \end{aligned}</annotation></semantics></math></p>
+<h2 class="unnumbered" id="lucas">Lucas</h2>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>L</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>L</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>L</mi><mi>n</mi></msub><mo>,</mo><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><msub><mi>F</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>11</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+            &amp;L_{n+2}=L_{n+1}+L_n, F_1=1, F_2=3\\
+            &amp;1,3,4,7,11,...
+        \end{aligned}</annotation></semantics></math></p>
+<h3 class="unnumbered" id="termenul-general-1">Termenul general</h3>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>L</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>−</mo><msub><mi>L</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>L</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mrow><mtext mathvariant="normal">Ecuație caracteristică: </mtext><mspace width="0.333em"></mspace></mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi mathvariant="normal">Δ</mi><mo>=</mo><mn>5</mn><mo>⇒</mo><msub><mi>x</mi><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>1</mn><mo>±</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo>⇒</mo><msub><mi>L</mi><mi>n</mi></msub><mo>=</mo><mi>A</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msup><mo>+</mo><mi>B</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msup></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+            &amp;L_{n+2}-L_{n+1}-L_n = 0\\
+            &amp;\text{Ecuație caracteristică: }x^2-x-1=0 \\
+        &amp;\Delta = 5 \Rightarrow x_{1,2} = \frac{1 \pm \sqrt{5}}{2}
+        \Rightarrow L_n = A\left(\frac{1+\sqrt{5}}{2}\right)^n
+                        + B\left(\frac{1-\sqrt{5}}{2}\right)^n
+        \end{aligned}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mrow><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>L</mi><mn>0</mn></msub><mo>=</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo>=</mo><mn>2</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>L</mi><mi>n</mi></msub><mo>=</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr></mtable><mo stretchy="true" form="postfix">}</mo></mrow><mo>⇒</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msqrt><mn>5</mn></msqrt><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>A</mi><msqrt><mn>5</mn></msqrt><mo>=</mo><msqrt><mn>5</mn></msqrt><mo>⇒</mo><mi>A</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>B</mi><mo>=</mo><mn>1</mn></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+            &amp;\left.
+                \begin{aligned}
+                    &amp;L_0=A+B=2\\
+                    &amp;L_n= A\left(\frac{1+\sqrt{5}}{2}\right)
+                            + B\left(\frac{1-\sqrt{5}}{2}\right)
+                \end{aligned}
+            \right\}
+            \Rightarrow
+            A\left(\frac{1+\sqrt{5}}{2}\right)+(1-\sqrt{5}) - A\left(\frac{1+\sqrt{5}}{2}\right)=1\\
+            &amp;A\sqrt{5}=\sqrt{5} \Rightarrow A=1 \Rightarrow B=1
+        \end{aligned}</annotation></semantics></math></p>
+<h2 class="unnumbered" id="pell">Pell</h2>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>P</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><mn>2</mn><msub><mi>P</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>P</mi><mi>n</mi></msub><mo>,</mo><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><msub><mi>F</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>12</mn><mo>,</mo><mn>29</mn><mo>,</mo><mi>⋯</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+            &amp;P_{n+2}=2P_{n+1}+P_n, F_1=1, F_2=2\\
+            &amp;1,2,5,12,29,\cdots
+        \end{aligned}</annotation></semantics></math></p>
+<h3 class="unnumbered" id="termenul-general-2">Termenul general</h3>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>P</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>−</mo><mn>2</mn><msub><mi>P</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>P</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mrow><mtext mathvariant="normal">Ecuație caracteristică: </mtext><mspace width="0.333em"></mspace></mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi mathvariant="normal">Δ</mi><mo>=</mo><mn>8</mn><mo>⇒</mo><msub><mi>x</mi><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>1</mn><mo>±</mo><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac><mo>=</mo><mn>1</mn><mo>±</mo><msqrt><mn>2</mn></msqrt><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>P</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><mo>⋅</mo><msub><mi>P</mi><mn>1</mn></msub><mo>+</mo><msub><mi>P</mi><mn>0</mn></msub></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mn>2</mn><mo>=</mo><mn>2</mn><mo>+</mo><msub><mi>P</mi><mn>0</mn></msub><mo>⇒</mo><msub><mi>P</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mtd></mtr></mtable></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+            &amp;P_{n+2}-2P_{n+1}-P_n = 0\\
+            &amp;\text{Ecuație caracteristică: }x^2-2x-1=0 \\
+        &amp;\Delta = 8 \Rightarrow x_{1,2} = \frac{1 \pm 2\sqrt{2}}{2}=1\pm\sqrt{2}
+            \ \ \ \begin{aligned}
+                &amp;P_2 = 2 \cdot P_1 + P_0\\
+                &amp;2 = 2 + P_0 \Rightarrow P_0=0
+            \end{aligned}
+        \end{aligned}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>P</mi><mn>0</mn></msub><mo>=</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>P</mi><mi>n</mi></msub><mo>=</mo><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn></mtd></mtr></mtable></mrow><mo>⇒</mo><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mn>2</mn><mi>A</mi><msqrt><mn>2</mn></msqrt><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></mfrac><mo>⇒</mo><mi>B</mi><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></mfrac></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+            &amp;\left\{
+                \begin{aligned}
+                    &amp;P_0=A+B=0\\
+                    &amp;P_n= A(1+\sqrt{2})+B(1+\sqrt{2})=1 
+                \end{aligned}
+            \right.
+            \Rightarrow
+            A(1+\sqrt{2})-A(1-\sqrt{2})=1\\
+            &amp;2A\sqrt{2}=1 \Rightarrow A=\frac{1}{2\sqrt{2}} \Rightarrow B=-\frac{1}{2\sqrt{2}}
+        \end{aligned}</annotation></semantics></math></p>
+<h1 class="unnumbered" id="forma-generală">Forma generală</h1>
+<h2 class="unnumbered" id="fibonacci-1">Fibonacci</h2>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>A</mi><mspace width="0.222em"></mspace></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msup><mi>A</mi><mn>2</mn></msup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msup><mi>A</mi><mn>3</mn></msup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>3</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>⋯</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msup><mi>A</mi><mi>n</mi></msup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>n</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+                A\ &amp;=\begin{pmatrix}
+                    1   &amp;   1   \\
+                    0   &amp;   1   
+                \end{pmatrix}\\
+                A^2&amp;= \begin{pmatrix}
+                    1   &amp;   1   \\
+                    0   &amp;   1   
+                \end{pmatrix} \begin{pmatrix}
+                    1   &amp;   1   \\
+                    0   &amp;   1   
+                \end{pmatrix}=\begin{pmatrix}
+                    1   &amp;   2   \\
+                    0   &amp;   1   
+                \end{pmatrix}\\
+                A^3&amp;=\begin{pmatrix}
+                    1   &amp;   2   \\
+                    0   &amp;   1   
+                \end{pmatrix} \begin{pmatrix}
+                    1   &amp;   1   \\
+                    0   &amp;   1   
+                \end{pmatrix}=\begin{pmatrix}
+                    1   &amp;   3   \\
+                    0   &amp;   1   
+                \end{pmatrix}\\
+                &amp;\cdots\\
+                A^n&amp;=\begin{pmatrix}
+                    1   &amp;   n   \\
+                    0   &amp;   1   
+                \end{pmatrix}\\
+                \end{aligned}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>A</mi><mspace width="0.222em"></mspace></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msup><mi>A</mi><mn>2</mn></msup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msup><mi>A</mi><mn>3</mn></msup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>3</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msup><mi>A</mi><mi>n</mi></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msup><mspace width="0.222em"></mspace><mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="bold">*</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msup><mi>A</mi><mn>4</mn></msup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>3</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>5</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>3</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>3</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msup><mi>A</mi><mn>5</mn></msup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>5</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>3</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>3</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>8</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>5</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>5</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>3</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>⋯</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msup><mi>A</mi><mi>n</mi></msup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub><mo>+</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>⇒</mo><msup><mi>A</mi><mi>n</mi></msup><mo>=</mo><msub><mi>F</mi><mi>n</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+                A\ &amp;=\begin{pmatrix}
+                    1   &amp;   1   \\
+                    1   &amp;   0   
+                \end{pmatrix}\\
+                A^2&amp;= \begin{pmatrix}
+                    1   &amp;   1   \\
+                    1   &amp;   0   
+                \end{pmatrix} \begin{pmatrix}
+                    1   &amp;   1   \\
+                    1   &amp;   0   
+                \end{pmatrix}=\begin{pmatrix}
+                    2   &amp;   1   \\
+                    1   &amp;   1   
+                \end{pmatrix}  \\
+                A^3&amp;=\begin{pmatrix}
+                    2   &amp;   1   \\
+                    1   &amp;   1   
+                \end{pmatrix} \begin{pmatrix}
+                    1   &amp;   1   \\
+                    1   &amp;   0   
+                \end{pmatrix}=\begin{pmatrix}
+                    3   &amp;   2   \\
+                    2   &amp;   1   
+                \end{pmatrix} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+                                            A^n = \begin{pmatrix}
+                                                    F_{n+1} &amp; F_{n}\\
+                                                    F_n     &amp;   F_{n-1}
+                                            \end{pmatrix}\ \ \ ^{(\boldsymbol{*})}\\
+                A^4&amp;=\begin{pmatrix}
+                    3   &amp;   2   \\
+                    2   &amp;   1   
+                \end{pmatrix} \begin{pmatrix}
+                    1   &amp;   1   \\
+                    1   &amp;   0   
+                \end{pmatrix}=\begin{pmatrix}
+                    5   &amp;   3   \\
+                    3   &amp;   2   
+                \end{pmatrix}\\
+                A^5&amp;=\begin{pmatrix}
+                    5   &amp;   3   \\
+                    3   &amp;   2   
+                \end{pmatrix} \begin{pmatrix}
+                    1   &amp;   1   \\
+                    1   &amp;   0   
+                \end{pmatrix}=\begin{pmatrix}
+                    8   &amp;   5   \\
+                    5   &amp;   3   
+                \end{pmatrix}\\
+                &amp;\cdots\\
+                A^n&amp;=\begin{pmatrix}
+                    F_n + F_{n-1}   &amp;   F_n \\
+                    F_n &amp;   F_{n-1} 
+                \end{pmatrix}=\begin{pmatrix}
+                F_n &amp; F_n\\
+                F_n &amp; 0
+                \end{pmatrix}+\begin{pmatrix}
+                F_{n-1} &amp; 0\\
+                0       &amp; F_{n-1}
+                \end{pmatrix} \Rightarrow A^n = F_n \begin{pmatrix}
+                1   &amp;   1\\
+                1   &amp;   0
+                \end{pmatrix}+F_{n-1} \begin{pmatrix}
+                1   &amp;   0\\
+                0   &amp;   1
+                \end{pmatrix}
+                \end{aligned}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><msup><mi>A</mi><mi>n</mi></msup><mo>=</mo><msub><mi>F</mi><mi>n</mi></msub><mo>⋅</mo><mi>A</mi><mo>=</mo><msub><mi>F</mi><mi>n</mi></msub><mo>⋅</mo><mi>A</mi><mo>+</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>⋅</mo><msub><mi>I</mi><mn>2</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mi>n</mi><mo>≥</mo><mn>1</mn></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+    A^n=F_n \cdot A = F_n \cdot A + F_{n-1} \cdot I_2,\  n \ge 1
+    \end{aligned}</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">Din</mtext><mo stretchy="false" form="prefix">(</mo><mi mathvariant="bold">*</mi><mo stretchy="false" form="postfix">)</mo><mo>⇒</mo><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mrow><mi>det</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msup><mi>A</mi><mi>n</mi></msup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">∣</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">∣</mo></mrow><mo>=</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⋅</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>−</mo><msup><msub><mi>F</mi><mi>n</mi></msub><mn>2</mn></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mrow><mi>det</mi><mo>&#8289;</mo></mrow><mi>A</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mrow><mi>det</mi><mo>&#8289;</mo></mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">∣</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">∣</mo></mrow><mo>=</mo><mi>−</mi><mn>1</mn></mtd></mtr></mtable></mrow><mo>⇒</mo></mrow><annotation encoding="application/x-tex">\text{Din} (\boldsymbol{*}) \Rightarrow  \left\{\begin{aligned} &amp;\det(A^n) = \begin{vmatrix}
+    F_{n+1} &amp; F_{n}\\
+    F_{n}   &amp; F_{n=1}
+    \end{vmatrix}= F_{n+1} \cdot F_{n-1} - {F_n}^2 = (\det{A})^n \\
+    &amp;\det{A} = \begin{vmatrix}
+    1&amp;1\\
+    1&amp;0
+    \end{vmatrix}=-1 \end{aligned}
+    \right. \Rightarrow</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⇒</mo><mrow><mi>det</mi><mo>&#8289;</mo></mrow><msup><mi>A</mi><mi>n</mi></msup><mo>=</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⋅</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>−</mo><msup><msub><mi>F</mi><mi>n</mi></msub><mn>2</mn></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\Rightarrow \det{A^n} = F_{n+1} \cdot F_{n-1} - {F_n}^2 = (-1)^n</annotation></semantics></math></p>
+<div class="obs">
+<p><strong>Observaţia 1</strong>. <span
+class="math display">$$\begin{aligned}
+    \begin{pmatrix}
+    F_{n+2}\\
+    F_{n+1}
+    \end{pmatrix} &amp;= \begin{pmatrix}
+    1&amp;1\\
+    1&amp;0
+    \end{pmatrix} \begin{pmatrix}
+    F_{n+1}\\ F_n
+\end{pmatrix}\\
+    \begin{pmatrix}
+    F_{n+1}\\
+    F_{n}
+    \end{pmatrix} &amp;= \begin{pmatrix}
+    1&amp;1\\
+    1&amp;0
+    \end{pmatrix} \begin{pmatrix}
+    F_{n}\\ F_{n-1}
+    \end{pmatrix}\\
+     &amp;\cdots \\
+    \begin{pmatrix}
+    F_{2}\\
+    F_{1}
+    \end{pmatrix}\  &amp;= \begin{pmatrix}
+    1&amp;1\\
+    1&amp;0
+    \end{pmatrix} \begin{pmatrix}
+    F_{1}\\ F_0
+    \end{pmatrix} \xRightarrow{+} \begin{pmatrix}
+    F_{n+1}\\
+    F_{n}
+    \end{pmatrix} = \begin{pmatrix}
+    1&amp;1\\
+    1&amp;0
+    \end{pmatrix}^n \begin{pmatrix}
+    F_1\\ F_0
+    \end{pmatrix}=A^n \begin{pmatrix}
+    F1 \\ F0
+    \end{pmatrix}
+    \end{aligned}$$</span></p>
+</div>
+<h2 class="unnumbered" id="pell-1">Pell</h2>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>A</mi><mspace width="0.222em"></mspace></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><msup><mi>A</mi><mn>2</mn></msup></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>5</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><msup><mi>A</mi><mn>3</mn></msup></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>5</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>12</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>5</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>5</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><msup><mi>A</mi><mn>3</mn></msup></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>12</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>5</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>5</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>29</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>12</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>12</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>5</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"></mtd><mtd columnalign="left" style="text-align: left"><mi>⋯</mi><msup><mi>A</mi><mi>n</mi></msup></mtd><mtd columnalign="right" style="text-align: right"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mi>n</mi></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mi>n</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>n</mi><mo>≥</mo><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+A \ &amp;=\begin{pmatrix}
+2&amp;1\\
+1&amp;0
+\end{pmatrix}\\
+A^2 &amp;= \begin{pmatrix}
+2&amp;1\\
+1&amp;0
+\end{pmatrix}\begin{pmatrix}
+2&amp;1\\
+1&amp;0
+\end{pmatrix}=\begin{pmatrix}
+5&amp;2\\
+2&amp;1
+\end{pmatrix}\\
+A^3 &amp;=  \begin{pmatrix}
+5&amp;2\\
+2&amp;1
+\end{pmatrix}\begin{pmatrix}
+2&amp;1\\
+1&amp;0
+\end{pmatrix}=\begin{pmatrix}
+12&amp;5\\
+5&amp;2
+\end{pmatrix}\\
+A^3 &amp;= \begin{pmatrix}
+12&amp;5\\
+5&amp;2
+\end{pmatrix}\begin{pmatrix}
+2&amp;1\\
+1&amp;0
+\end{pmatrix}=\begin{pmatrix}
+29&amp;12\\
+12&amp;5
+\end{pmatrix}\\
+&amp;\cdots
+A^n &amp;= \begin{pmatrix}
+P_{n+1}&amp;P_n\\
+P_n&amp;P_{n-1}, \ \ n \ge 1
+\end{pmatrix} 
+\end{aligned}</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>det</mi><mo>&#8289;</mo></mrow><msup><mi>A</mi><mi>n</mi></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">∣</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mi>n</mi></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>p</mi><mi>n</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">∣</mo></mrow><mo>=</mo><msub><mi>P</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⋅</mo><msub><mi>P</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>−</mo><msup><msub><mi>P</mi><mi>n</mi></msub><mn>2</mn></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\det{A^n} = \begin{vmatrix}
+P_{n+1}&amp;P_n\\
+p_n &amp; P_{n-1}
+\end{vmatrix}= P_{n+1}\cdot P_{n-1} - {P_n}^2 = (-1)^n</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msup><mi>A</mi><mi>n</mi></msup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn><msub><mi>P</mi><mi>n</mi></msub><mo>+</mo><msub><mi>P</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mi>n</mi></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mi>n</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>P</mi><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>P</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msub><mi>P</mi><mi>n</mi></msub><mi>A</mi><mo>+</mo><msub><mi>P</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><msub><mi>I</mi><mn>2</mn></msub></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+A^n &amp;= \begin{pmatrix}
+2P_n + P_{n-1}&amp; P_n\\
+P_n&amp;P_{n-1}
+\end{pmatrix}=Pn\begin{pmatrix}
+2&amp;1\\
+1&amp;0
+\end{pmatrix}+\begin{pmatrix}
+P_{n-1}&amp;0\\
+0&amp;P_{n-1}
+\end{pmatrix}\\
+&amp;= P_n A+P_{n-1}I_2 
+\end{aligned}</annotation></semantics></math></p>
+<h2 class="unnumbered" id="lucas-1">Lucas</h2>
+<p><span class="math display">$$\begin{aligned}
+&amp;\overset{\scalebox{1.3}{\ \ B}}{
+  \overset{\scalebox{2}[1]{\ \rotatebox{90}{\}}}}{
+    \begin{pmatrix}
+      1 &amp; 2\\
+      2 &amp; -1
+    \end{pmatrix}
+  }
+}
+\cdot
+\overset{\scalebox{1.3}{\ \ A}}{
+  \overset{\scalebox{1.6}[1]{\ \rotatebox{90}{\}}}}{
+    \begin{pmatrix}
+      1 &amp; 1\\
+      1 &amp; 0
+    \end{pmatrix}
+  }
+}
+=
+\begin{pmatrix}
+  3 &amp; 1\\
+  1 &amp; 2
+\end{pmatrix}\\
+&amp;\begin{pmatrix}
+  3 &amp; 1\\
+  1 &amp; 2
+\end{pmatrix}
+\begin{pmatrix}
+  1 &amp; 1\\
+  1 &amp; 0
+\end{pmatrix}
+=
+\begin{pmatrix}
+  4 &amp; 3\\
+  3 &amp; 1
+\end{pmatrix}\\
+&amp;\begin{pmatrix}
+  4 &amp; 3\\
+  3 &amp; 1
+\end{pmatrix}
+\begin{pmatrix}
+  1 &amp; 1\\
+  1 &amp; 0
+\end{pmatrix}
+=
+\begin{pmatrix}
+  7 &amp; 4\\
+  4 &amp; 3
+\end{pmatrix}
+\end{aligned}$$</span>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>B</mi><mo>⋅</mo><msup><mi>A</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>L</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>L</mi><mi>n</mi></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>L</mi><mi>n</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>L</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>n</mi><mo>≥</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>B</mi><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mi>n</mi></msub><mo>+</mo><mn>2</mn><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>2</mn><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn><msub><mi>F</mi><mi>n</mi></msub><mo>−</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>L</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>F</mi><mi>n</mi></msub><mo>+</mo><mn>2</mn><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><menclose notation="box"><mrow><msub><mi>L</mi><mi>n</mi></msub><mo>=</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>2</mn><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mrow></menclose></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+&amp;B \cdot A^{n-1} = \begin{pmatrix}
+L_{n+1}&amp;L_n\\
+L_n&amp;L_{n-1}
+\end{pmatrix}, n \geq 1\\
+&amp;B\cdot\begin{pmatrix}
+F_n&amp;F_{n-1}\\
+F_{n-1}&amp;F_{n-2}
+\end{pmatrix}= \begin{pmatrix}
+1&amp;2\\
+2&amp;-1
+\end{pmatrix}\cdot\begin{pmatrix}
+F_n&amp;F_{n-1}\\
+F_{n-1}&amp;F_{n-2}
+\end{pmatrix}=\begin{pmatrix}
+F_{n}+2F_{n-1}&amp;F_{n-1}+2F_{n-2}\\
+2F_n-F_{n-1}&amp;2F_{n-1}-F_{n-2}
+\end{pmatrix}=\\
+&amp;L_{n+1}=F_{n}+2F{n-1}\\
+&amp;\boxed{L_n=F_{n-1}+2F_{n-2}}
+\end{aligned}</annotation></semantics></math></p>
+<h2 class="unnumbered" id="generalizare">Generalizare</h2>
+<p><span class="math display">$$\left. \begin{aligned}
+&amp;x_{n+2} = k x_{n+1}+x_n &amp; n=0\\
+&amp;x_1=1 &amp; x_2=k x_1 + x_0\\
+&amp;x_2=k &amp; \cancel{k} = \cancel{k} + x_0
+\end{aligned}\right\} A = \begin{pmatrix}
+k&amp;1\\
+1&amp;0
+\end{pmatrix} \ \ \ \begin{aligned} &amp;k=1, &amp;A^n=\begin{pmatrix}
+x_{n+1}&amp;x_n\\
+x_n&amp;x_{n-1}
+\end{pmatrix} \ \text{(Fib.)}\\
+&amp;&amp;x_{n+2}=x_{n+1}+x_n \  \text{(Fib.)}\\
+&amp;k=2, &amp;x_{n+2}=2x_{n+1}+x_n \ \text{(Pell)}
+\end{aligned}$$</span></p>
+<h2 class="unnumbered" id="identități-legate-de-șiruri">Identități
+legate de șiruri</h2>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>F</mi><mi>n</mi></msub><mspace width="0.222em"></mspace><mo stretchy="false" form="prefix">|</mo><mspace width="0.222em"></mspace><mo>⋅</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mspace width="0.222em"></mspace><msub><mi>F</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><msubsup><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></msubsup><mo>+</mo><msub><mi>F</mi><mi>n</mi></msub><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⇒</mo></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+&amp;F_{n+2}=F_{n+1}+F_n \ |\ \cdot F_{n+1} \ \ F_1=1 \ F_2=1\\
+&amp;F_{n+1}F_{n+2}=F^2_{n+1} + F_n F_{n+1} \Rightarrow
+\end{aligned}</annotation></semantics></math> <span
+class="math display">$$\begin{aligned}
+\Rightarrow F^2_{n+1}&amp;=F_{n+1}F_{n+2} - F_n F_{n+1}\\
+n\rightarrow n-1: F^2_{n}&amp;=F_{n}F_{n+1} - F_{n-1} F_{n}\\
+n\rightarrow n-2: F^2_{n-1}&amp;=F_{n-1}F_{n} - F_{n-2} F_{n-1}\\
+&amp;\cdots \\
+n=0 \rightarrow F^2_{1} &amp;= F_1F_2-F_0F_1\\
+\rule{3cm}{0.4pt}&amp;\rule{4cm}{0.4pt}\ _+\\
+\end{aligned}$$</span>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><menclose notation="box"><mrow><msubsup><mi>F</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>F</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><mi>⋯</mi><mo>+</mo><msubsup><mi>F</mi><mi>n</mi><mn>2</mn></msubsup><mo>=</mo><msub><mi>F</mi><mi>n</mi></msub><mo>⋅</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></menclose></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+&amp;\boxed{F^2_1+F^2_2+\cdots+F^2_n=F_n\cdot F_{n+1}}\\
+\end{aligned}</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><mi>k</mi><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>x</mi><mi>n</mi></msub><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mi>k</mi><mo>=</mo><mi>k</mi><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>0</mn></msub><mo>⇒</mo><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mtext mathvariant="normal">generalizarea pentru șirul lui Fibonacci k=1</mtext></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+&amp;x_{n+2}=kx_{n+1}+x_n, \ \ x_1=1, \ x_2=k=kx_1+x_0 \Rightarrow x_0=0\\
+&amp;\text{generalizarea pentru șirul lui Fibonacci k=1}
+\end{aligned}</annotation></semantics></math> <span
+class="math display">$$\begin{aligned}
+x_{n+2}x_{n+1} &amp;= kx^2_{n+1} +x_nx_{n+1}\\
+\Leftrightarrow kx^2_{n+1} &amp;= x_{n+2}x_{n+1} - \cancel{x_nx_{n+1}}\\
+n \rightarrow n-1\ kx^2_{n} &amp;= \cancel{x_{n+1}x_{n}} -
+\cancel{x_{n-1}x_{n}}\\
+n \rightarrow n-2\ kx^2_{n-1} &amp;= \cancel{x_{n}x_{n-1}} -
+\cancel{x_{n-2}x_{n-1}}\\
+&amp;\cdots\\
+n = 0\ kx^2_{1} &amp;= \cancel{x_{2}x_{1}} - x_{0}x_{1}\ _{(=0)}\\
+\rule{3cm}{0.4pt}&amp;\rule{4cm}{0.4pt}\ _+
+\end{aligned}$$</span>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><menclose notation="box"><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><msubsup><mi>x</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>x</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>x</mi><mn>3</mn><mn>2</mn></msubsup><mo>+</mo><mi>⋯</mi><mo>+</mo><msubsup><mi>x</mi><mi>n</mi><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>x</mi><mi>n</mi></msub><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></menclose></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+&amp;\boxed{k(x^2_1 + x^2_2 + x^2_3 + \cdots + x^2_n)=x_n x_{n+1}} 
+\end{aligned}</annotation></semantics></math> Dacă
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>2</mn><mo>⇒</mo><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><msub><mi>P</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">k=2 \Rightarrow x_n = P_n</annotation></semantics></math>
+(șirul lui Pelle), și:<br />
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo stretchy="false" form="prefix">(</mo><msubsup><mi>P</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>P</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>P</mi><mn>3</mn><mn>2</mn></msubsup><mo>+</mo><mi>⋯</mi><mo>+</mo><msubsup><mi>P</mi><mi>n</mi><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>P</mi><mi>n</mi></msub><msub><mi>P</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">2(P^2_1 + P^2_2 + P^2_3 + \cdots + P^2_n)=P_n P_{n+1}</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><msub><mi>F</mi><mi>k</mi></msub><mrow><msub><mi>F</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>F</mi><mrow><mi>k</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow></mfrac><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><msub><mi>F</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub></mfrac><mo>,</mo><mspace width="0.222em"></mspace><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sum_{k=1}^{n} \frac{F_k}{F_{k+1} F_{k+2}} = 1 - \frac{1}{F_{n+2}},\ n \geq 1</annotation></semantics></math></p>
+<p>...</p>
+<h2 class="unnumbered" id="șirul-lui-mersenne">Șirul lui Mersenne</h2>
+<p>Mai jos
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>M</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><mn>3</mn><msub><mi>M</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><mn>2</mn><msub><mi>M</mi><mi>n</mi></msub><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msub><mi>M</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>M</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>M</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>−</mo><mn>3</mn><msub><mi>M</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>2</mn><msub><mi>M</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mrow><mtext mathvariant="normal">Atașăm ecuația caracteristică: </mtext><mspace width="0.333em"></mspace></mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>X</mi><mi>n</mi></msub><mo>=</mo><mi>A</mi><msup><msub><mi>x</mi><mn>1</mn></msub><mi>n</mi></msup><mo>+</mo><mi>B</mi><msup><msub><mi>x</mi><mn>2</mn></msub><mi>n</mi></msup><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>M</mi><mi>n</mi></msub><mo>=</mo><mi>A</mi><mo>⋅</mo><msup><mn>2</mn><mi>n</mi></msup><mo>+</mo><mi>B</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>M</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><mo>=</mo><mn>4</mn><mi>A</mi><mo>+</mo><mi>B</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>M</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>=</mo><mn>2</mn><mi>A</mi><mo>+</mo><mi>B</mi></mtd></mtr></mtable></mrow><mo>⇒</mo><mrow><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>A</mi><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>B</mi><mo>=</mo><mi>−</mi><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">}</mo></mrow><mo>⇒</mo><msup><mn>2</mn><mi>n</mi></msup><mo>−</mo><mn>1</mn></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+&amp;M_{n+2}=3M_{n+1}-2M_n \ \ \ \ M_1=1, \ M_2=3 \\
+&amp;M_{n+2}-3M_{n+1}+2M_n=0\\
+&amp;\text{Atașăm ecuația caracteristică: }x^2-3x+2=0\\
+&amp;x_1=2 \ \ x_2=1\\
+&amp;\\
+&amp;X_n=A{x_1}^n+B{x_2}^n, \ M_n=A\cdot 2^n +B\\
+    &amp;\left\{ \begin{aligned}
+        &amp;M_2=2=4A+B\\
+        &amp;M_1=1=2A+B
+    \end{aligned} \right. \Rightarrow \left. \begin{aligned}
+                                    &amp;A=1\\
+                                    &amp;B=-1
+                                    \end{aligned} \right\} \Rightarrow 2^n-1
+\end{aligned}</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>15</mn><mo>,</mo><mn>31</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+&amp;1,3,7,15,31,...
+\end{aligned}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mn>2018</mn><mo>:</mo><mspace width="0.222em"></mspace><msub><mi>M</mi><mn>82589933</mn></msub></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mn>2024</mn><mo>:</mo><mspace width="0.222em"></mspace><msub><mi>M</mi><mn>136279841</mn></msub></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+&amp; 2018:\ M_{82589933}\\
+&amp; 2024:\  M_{136279841}
+\end{aligned}</annotation></semantics></math></p>
+<p>...</p>
+</body>
+</html>
