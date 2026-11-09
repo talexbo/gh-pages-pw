@@ -224,6 +224,6 @@ footer {
 }
 
 /* TODO 12 (verificare): contrast bun peste tot (text alb pe fundal închis, text închis pe fundal deschis)
-   și toate linkurile arată clar că se pot apăsa. */
+   și toate linkurile arată clar că se pot apăsa. DA*/
 
-/* BONUS (nenotat): rândurile din grilă își schimbă fundalul la hover: .destinatii tr:hover { ... } */
+/* BONUS (nenotat): MAI SUS rândurile din grilă își schimbă fundalul la hover: .destinatii tr:hover { ... } */
