@@ -1,0 +1,42 @@
+/* style.css – Laborator 6 (model)
+   Loaded AFTER Bootstrap, so it can override it. Bootstrap does most of the work: this file only has what Bootstrap does not give. */
+
+/* cards lift up a little when the mouse is over them (like in Lab 5) */
+.lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* the carousel pictures all get the same height, cropped if needed */
+.carousel-item img {
+  height: 24rem;
+  object-fit: cover;
+}
+
+/* readable caption on any picture */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+}
+
+.soldout {
+  color: #b00020;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* accessibility: if the user asked the system for "reduced motion", the movement is switched off.
+   Keep this block as it is (do not delete it). */
+@media (prefers-reduced-motion: reduce) {
+  .lift {
+    transition: none;
+  }
+
+  .lift:hover {
+    transform: none;
+  }
+}

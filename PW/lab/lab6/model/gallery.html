@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabăra Pinewood – Galerie</title>
+  <!-- [1] BOOTSTRAP: copy these two lines into the <head> of EVERY page of your site (Bootstrap first, your style.css after it) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">   <!-- own CSS AFTER Bootstrap -->
+</head>
+<body>
+
+  <header class="bg-success text-white py-4" id="top">
+    <div class="container">
+      <h1 class="h2 mb-1">Tabăra Pinewood</h1>
+      <p class="mb-0">Tabără de vară pentru copii de 8–12 ani · pădure, lac și prieteni buni</p>
+    </div>
+  </header>
+
+  <!-- [2] NAVBAR (menu that hides behind a button on phones): copy the whole <nav> block. Change the brand name and the links.
+       The link of the page you are on gets class="nav-link active" aria-current="page". Keep the same id in data-bs-target and in the id of the collapse. -->
+  <nav class="navbar navbar-expand-md bg-body-tertiary" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Tabăra Pinewood</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Deschide meniul">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="activities.html">Activități</a></li>
+          <li class="nav-item"><a class="nav-link" href="prices.html">Prețuri</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <h2>Galerie</h2>
+    <!-- [5] CAROUSEL (slideshow): copy the whole block. Change the images and the alt texts. Only the FIRST carousel-item has "active".
+         For every slide add one carousel-item and one indicator button (data-bs-slide-to="0", "1", "2"...). -->
+    <div id="gallery-carousel" class="carousel slide" aria-label="Galerie foto">
+      <div class="carousel-indicators">
+      <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imaginea 1"></button>
+      <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="1" aria-label="Imaginea 2"></button>
+      <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="2" aria-label="Imaginea 3"></button>
+      </div>
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/photo1.png" class="d-block w-100" alt="Copii care vâslesc într-o canoe pe lac">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="h5">Lac și canoe</h3>
+          <p>Dimineți la apă.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/photo2.png" class="d-block w-100" alt="Un grup de copii într-o drumeție">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="h5">Drumeții</h3>
+          <p>Poteci prin pădure.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/photo3.png" class="d-block w-100" alt="Copii care pictează la o masă lungă">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="h5">Atelier de artă</h3>
+          <p>Picturile pleacă acasă.</p>
+        </div>
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Imaginea anterioară</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Imaginea următoare</span>
+      </button>
+    </div>
+    <!-- [5b] PICTURE GRID: 2 pictures per row on phones, 3 per row from 768 px up -->
+    <div class="row row-cols-2 row-cols-md-3 g-3 mt-3">
+      <div class="col">
+        <div class="card lift">
+          <img src="images/photo1.png" class="card-img-top" alt="Lac">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card lift">
+          <img src="images/photo2.png" class="card-img-top" alt="Pădure">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card lift">
+          <img src="images/photo3.png" class="card-img-top" alt="Artă">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container">
+      <p class="mb-1">
+        Tabăra Pinewood · <a class="link-light" href="mailto:info@camp-pinewood.example">info@camp-pinewood.example</a>
+        · <a class="link-light" href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Hartă (se deschide într-o filă nouă)</a>
+        · <a class="link-light" href="#top">Înapoi sus</a>
+      </p>
+      <p class="small mb-0">Site demonstrativ, Laboratorul 6 (Bootstrap) · tabără fictivă</p>
+    </div>
+  </footer>
+
+  <!-- [1] BOOTSTRAP (continued): and this line right before </body> of every page (the menu button and the carousel need it) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

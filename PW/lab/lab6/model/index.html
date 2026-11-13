@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabăra Pinewood – Acasă</title>
+  <!-- [1] BOOTSTRAP: copy these two lines into the <head> of EVERY page of your site (Bootstrap first, your style.css after it) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">   <!-- own CSS AFTER Bootstrap -->
+</head>
+<body>
+
+  <header class="bg-success text-white py-4" id="top">
+    <div class="container">
+      <h1 class="h2 mb-1">Tabăra Pinewood</h1>
+      <p class="mb-0">Tabără de vară pentru copii de 8–12 ani · pădure, lac și prieteni buni</p>
+    </div>
+  </header>
+
+  <!-- [2] NAVBAR (menu that hides behind a button on phones): copy the whole <nav> block. Change the brand name and the links.
+       The link of the page you are on gets class="nav-link active" aria-current="page". Keep the same id in data-bs-target and in the id of the collapse. -->
+  <nav class="navbar navbar-expand-md bg-body-tertiary" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Tabăra Pinewood</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Deschide meniul">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="activities.html">Activități</a></li>
+          <li class="nav-item"><a class="nav-link" href="prices.html">Prețuri</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <section class="py-3">
+      <h2>Bun venit în pădure</h2>
+      <p class="lead">O săptămână de sport, artă și drumeții pentru copii de 8–12 ani. Seriile au loc în iulie și august.</p>
+      <a href="contact.html" class="btn btn-success btn-lg">Rezervă acum</a>
+    </section>
+
+    <section class="py-3">
+      <h2>Ce oferim</h2>
+      <!-- [3] CARDS IN A GRID: one <div class="col-md-4"> = one card. Copy it as many times as you need (3 per row from 768 px up, one under the other on phones). Change image, alt, title, text, link. -->
+      <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 lift">
+          <img src="images/photo1.png" class="card-img-top" alt="Copii care vâslesc într-o canoe pe lac">
+          <div class="card-body">
+            <h3 class="h5 card-title">Lac și canoe</h3>
+            <p class="card-text">Înot și plimbări cu canoea, cu instructori pregătiți.</p>
+            <a href="activities.html#water" class="btn btn-outline-success">Activități pe apă</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 lift">
+          <img src="images/photo2.png" class="card-img-top" alt="Un grup de copii într-o drumeție pe o potecă din pădure">
+          <div class="card-body">
+            <h3 class="h5 card-title">Drumeții în pădure</h3>
+            <p class="card-text">Drumeții, vânătoare de comori și o seară la focul de tabără.</p>
+            <a href="activities.html#forest" class="btn btn-outline-success">Activități în pădure</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 lift">
+          <img src="images/photo3.png" class="card-img-top" alt="Copii care pictează la o masă lungă">
+          <div class="card-body">
+            <h3 class="h5 card-title">Artă și teatru</h3>
+            <p class="card-text">Pictură, lucru manual și un spectacol de teatru pentru părinți.</p>
+            <a href="activities.html#art" class="btn btn-outline-success">Activități de artă</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container">
+      <p class="mb-1">
+        Tabăra Pinewood · <a class="link-light" href="mailto:info@camp-pinewood.example">info@camp-pinewood.example</a>
+        · <a class="link-light" href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Hartă (se deschide într-o filă nouă)</a>
+        · <a class="link-light" href="#top">Înapoi sus</a>
+      </p>
+      <p class="small mb-0">Site demonstrativ, Laboratorul 6 (Bootstrap) · tabără fictivă</p>
+    </div>
+  </footer>
+
+  <!-- [1] BOOTSTRAP (continued): and this line right before </body> of every page (the menu button and the carousel need it) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

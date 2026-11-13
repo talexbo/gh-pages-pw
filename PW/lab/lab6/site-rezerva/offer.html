@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clubul Pedala – Ofertă</title>
+  <link rel="stylesheet" href="style.css">   <!-- own stylesheet -->
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <h1 class="hero-title">Clubul Pedala</h1>
+    <p>Ciclism pentru toți: ture ușoare, prieteni și aer curat</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-link">Acasă</a>
+    <a href="about.html" class="nav-link">Despre noi</a>
+    <a href="offer.html" class="nav-link current" aria-current="page">Ofertă</a>
+    <a href="gallery.html" class="nav-link">Galerie</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Ofertă: trasee și prețuri</h2>
+    <div class="table-wrap">
+      <table class="data-table">
+        <caption>Traseele clubului și prețul turei (RON / persoană)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Nivel</th>
+            <th scope="col">Traseu</th>
+            <th scope="col">Distanța</th>
+            <th scope="col">Preț</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="2">Ușor</th>
+            <td>Parcul Central</td><td>12 km</td><td>20</td>
+          </tr>
+          <tr>
+            <td>Lacul din oraș</td><td>18 km</td><td>20</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">Mediu</th>
+            <td>Dealul cu pădure</td><td>35 km</td><td>40</td>
+          </tr>
+          <tr>
+            <td>Valea râului</td>
+            <td colspan="2" class="soldout">Epuizat</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Prețul include ghidul și apa. Casca este obligatorie.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <p><a href="contact.html" class="cta pulse">Rezervă un loc</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Clubul Pedala · <a href="mailto:club@pedala.example">club@pedala.example</a>
+      · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Hartă (se deschide într-o filă nouă)</a>
+      · <a href="#top">Înapoi sus</a>
+    </p>
+    <p class="small">Site de rezervă, Laboratorul 5 · club fictiv</p>
+  </footer>
+
+</body>
+</html>
