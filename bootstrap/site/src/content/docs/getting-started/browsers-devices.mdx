@@ -1,0 +1,111 @@
+---
+title: Browsers & devices
+description: Learn about the browsers and devices, from modern to old, that are supported by Bootstrap, and the modern platform features the framework is built on.
+toc: true
+---
+
+## Supported browsers
+
+Bootstrap supports the **latest, stable releases** of all major browsers and platforms, plus a run of older versions of each engine. The exact policy lives in [our `.browserslistrc` file](https://github.com/twbs/bootstrap/blob/main/.browserslistrc):
+
+<Code lang="plaintext" filePath=".browserslistrc" fileMatch="last 2 major versions[\s\S]+not op_mini all" />
+
+Browserslist joins these lines with OR, not AND. The `>=` lines do not narrow `last 2 major versions`. They add every version above each floor, which is what sets our real minimums:
+
+<BsTable class="table">
+| Browser | Minimum version |
+| --- | --- |
+| Chrome | 138 |
+| Edge | 138 |
+| Firefox | 147 |
+| Safari (macOS) | 26 |
+| Safari (iOS and iPadOS) | 26 |
+</BsTable>
+
+Alternative browsers built on these engines (Chromium-based browsers like Brave, Opera, or Vivaldi, and browsers using WebKit on iOS) are not explicitly tested, but should be fully supported at equivalent engine versions.
+
+To measure coverage yourself, run `npx browserslist --coverage` in a clone of the repository, or paste the query into [browsersl.ist](https://browsersl.ist).
+
+### Why these versions?
+
+Bootstrap’s CSS is written against the modern platform baseline: [`light-dark()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark) for [color modes]([[docsref:/customize/color-modes]]), `oklch()` and `color-mix()` for the [color system]([[docsref:/customize/color]]), native CSS nesting, container queries, and `:has()`. Together these targets cover about 86% of global browser usage. The share moves as Can I Use updates its data.
+
+Unlike previous major versions, Bootstrap 6 does not ship fallbacks, prefixes, or polyfills for browsers below this floor. Pages will not render correctly in unsupported browsers—most visibly, colors depending on `light-dark()` will not resolve.
+
+## Modern platform features
+
+The table below lists the platform features v6 relies on and how each behaves at—and below—the support floor.
+
+<BsTable>
+| Feature | Used by | Behavior in supported browsers |
+| --- | --- | --- |
+| `light-dark()` | [Color modes]([[docsref:/customize/color-modes]]), all theme tokens | Sets the hard lower bound for the floor; no fallback below it |
+| `oklch()`, `color-mix()` | [Color system]([[docsref:/customize/color]]), theme variants | Fully supported above the floor |
+| Container queries (`@container`) | [Card groups]([[docsref:/components/card#card-groups]]), [horizontal list groups]([[docsref:/components/list-group#horizontal]]) | Fully supported above the floor; these components also require an ancestor query container (`.contains-inline`)—without one they stay stacked |
+| `:has()` | Forms, button groups with menus, and other contextual styling | Fully supported above the floor |
+| Native `<dialog>` | [Dialog]([[docsref:/components/dialog]]), [Drawer]([[docsref:/components/drawer]]) | Fully supported above the floor; focus containment and `inert` behavior come from the browser |
+| `<details name="…">` | [Exclusive accordions]([[docsref:/components/accordion]]) | Fully supported above the floor; in older, unsupported browsers accordion items degrade gracefully to independently openable `<details>` elements |
+| CSS scroll snap | [Carousel]([[docsref:/components/carousel]]) | Fully supported above the floor; native touch, wheel, and keyboard scrolling |
+| Logical properties | Spacing, borders, and [RTL]([[docsref:/customize/rtl]]) support throughout | Fully supported above the floor |
+</BsTable>
+
+### Also safe to use
+
+The floors clear more of the platform than the components currently use. All of the following need no fallback, no vendor prefix, and no polyfill in any 6.x release, so reach for them first when you build on top of Bootstrap or contribute to it:
+
+- Native CSS nesting, so compiled output can stay nested
+- `@layer`, which our [layer order]([[docsref:/getting-started/approach]]) depends on
+- `:focus-visible` for keyboard-only focus styling
+- Container query units and `subgrid`
+- `content-visibility`, `transition-behavior: allow-discrete`, and `@starting-style`, which together animate `<details>` and `<dialog>` open and closed
+- Unprefixed `backdrop-filter`
+- `text-wrap: balance`
+- Range syntax in media queries, such as `@media (width >= 1024px)`
+
+### Newly supported across all browser targets
+
+The higher floors make these features available across all supported browsers:
+
+- Relative color syntax, including `currentColor` as the source color
+- Same-document view transitions
+- `::details-content` for styling the expandable part of `<details>`
+- `content-visibility` for skipping off-screen rendering work
+
+Bootstrap already used `::details-content` in v6.0.0-alpha.1 as a progressive enhancement for accordion transitions. The higher floors make it available in every supported browser.
+
+We'll look for more ways to incorporate these features into Bootstrap as we continue to develop v6.
+
+### Not available yet
+
+These features are not fully supported across our browser targets:
+
+- **Anchor positioning** is incomplete in Firefox 147 and Safari 26.
+- **Invoker Commands API** (`command` / `commandfor`) requires Safari 26.2.
+- **Customizable `<select>`** (`appearance: base-select`) is unavailable in Firefox.
+- **`text-box`** (`text-box-trim`) requires Firefox 154.
+
+We plan to adopt more of these features as we raise browser minimums in future major releases. See [Looking ahead to v7]([[docsref:/getting-started/approach#looking-ahead-to-v7]]) for our planned direction.
+
+## JavaScript
+
+Bootstrap’s JavaScript ships as **native ES modules only**. Load it with `<script type="module">`—a classic `<script src>` without `type="module"` will not execute it, and there is no global `window.bootstrap` object. See the [JavaScript getting-started guide]([[docsref:/getting-started/javascript]]) for loading patterns, including import maps for the bundle’s dependencies.
+
+All browsers meeting the CSS support floor above fully support ES modules, `import`/`export` syntax, and the DOM APIs Bootstrap’s plugins use—no transpilation or polyfills are required or provided.
+
+## Mobile devices
+
+Generally speaking, Bootstrap supports the latest versions of each major platform’s default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported. We also exclude UC Browser, QQ Browser, and KaiOS. Together they hold under 1% of users, and including them only adds vendor prefixes to our CSS: `-webkit-mask-*` for UC and QQ, and `-moz-column-gap` for KaiOS. KaiOS additionally [broke our floating labels](https://github.com/postcss/autoprefixer/issues/1533).
+
+<BsTable>
+| Platform | Supported browsers |
+| --- | --- |
+| Android | Chrome (last two major versions) |
+| iOS and iPadOS | Safari 26+, Chrome (uses WebKit on iOS) |
+| Windows, macOS, Linux | Chrome 138+, Edge 138+, Firefox 147+; Safari 26+ on macOS |
+</BsTable>
+
+As with v5, make sure you include the responsive viewport meta tag in your `<head>` for proper rendering on mobile devices:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
