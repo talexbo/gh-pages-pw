@@ -42,6 +42,7 @@ body {
 
 .nav-link:hover {
   background-color: #cfd8dc;
+  color: #ff0000;
 }
 
 main {
@@ -68,7 +69,7 @@ section {
 .card {
   background-color: #ffffff;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 6px rgba(178, 87, 87, 0.25);
   overflow: hidden;
 }
 
@@ -122,14 +123,20 @@ section {
    .cards -> display: flex; flex-wrap: wrap; gap: 1.5rem;
    (.col, written above, says: each column is at least 16rem wide and grows to fill the row) */
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem
+}
+
 /* ---------- colours ---------- */
 .site-header {
-  background-color: #1b5e20;
+  background-color: #7c0442;
   color: #ffffff;
 }
 
 .site-footer {
-  background-color: #2b2b2b;
+  background-color: #c61414;
   color: #ffffff;
 }
 
@@ -139,12 +146,12 @@ section {
 }
 
 .current {
-  background-color: #1b5e20;
+  background-color: #ff0000;
   color: #ffffff;
 }
 
 .cta {
-  background-color: #1b5e20;
+  background-color: #ae13bc;
   color: #ffffff;
 }
 
@@ -153,11 +160,21 @@ section {
 /* TODO 8: cards lift up a little when the mouse is over them.
    .lift       -> transition: transform 0.3s ease, box-shadow 0.3s ease;
    .lift:hover -> transform: translateY(-6px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); */
-   .lift      { transition: transform 0.3s ease, box-shadow 0.3s ease;}
-   .lift:hover { transform: translateY(-6px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);}
+.lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(242, 0, 0, 0.53);
+}
 
 /* TODO 9: navigation links change colour smoothly.
    .nav-link -> transition: background-color 0.3s ease, color 0.3s ease; */
+
+.nav-link {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 /* ---------- @keyframes animations ---------- */
 
@@ -171,44 +188,53 @@ section {
 
 /* ---------- other own rules ---------- */
 
-@keyframes sline-in{
+@keyframes sline-in {
   from {
-    opacity:0;
+    opacity: 0;
     transform: translateX(-40px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-@keyframes pulse{
+@keyframes pulse {
   0% {
-    transform:scale(1);
+    transform: scale(1);
   }
+
   50% {
-    transform:scale(1.5);
+    transform: scale(1.5);
   }
+
   100% {
-    transform:scale(1);
+    transform: scale(1);
   }
 
 }
-@keyframes fade-in{
-  from{
+
+@keyframes fade-in {
+  from {
     opacity: 0;
   }
-  to{
+
+  to {
     opacity: 1;
   }
 }
 
-.fade-in { animation: fade-in 1.2s ease-in;}
-.pulse{
+.fade-in {
+  animation: fade-in 1.2s ease-in;
+}
+
+.pulse {
   animation: pulse 2s ease-in-out infinite;
 }
+
 thead th {
-  background-color: #1b5e20;
+  background-color: #7c0442;
   color: #ffffff;
 }
 
@@ -228,6 +254,7 @@ thead th {
    If the user asked the operating system for "reduced motion", the movement is switched off.
    Keep this block as it is (do not delete it). */
 @media (prefers-reduced-motion: reduce) {
+
   .hero-title,
   .pulse,
   .fade-in {
@@ -242,4 +269,10 @@ thead th {
   .lift:hover {
     transform: none;
   }
+}
+
+.card img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
 }

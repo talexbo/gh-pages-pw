@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Numele site-ului – Ofertă</title>
-  <link rel="stylesheet" href="style.css">   <!-- own stylesheet -->
+  <title>Vulturhalealeă – Ofertă</title>
+  <link rel="stylesheet" href="style.css"> <!-- own stylesheet -->
 </head>
+
 <body>
 
   <header class="site-header" id="top">
-    <h1 class="hero-title">Numele site-ului</h1>
-    <p>Sloganul site-ului</p>
+    <h1 class="hero-title">Vulturhaleală</h1>
+    <p>Mâncare vie și drăgălașă pentru vulturul tău flămând.</p>
   </header>
 
   <nav class="site-nav" aria-label="Main navigation">
@@ -28,21 +30,84 @@
          - <caption>, <thead> with scope="col", <tbody> with at least 4 rows, at least 4 columns
          - at least one colspan and one rowspan; every row adds up to the same number of columns (Lab 3 rule)
          - keep the wrapper and the classes: <div class="table-wrap"> <table class="data-table"> -->
+
+
     <div class="table-wrap">
       <table class="data-table">
-
+        <caption>Gama noastră de produse</caption>
+        <thead>
+          <tr>
+            <th scope="col">Produs</th>
+            <th scope="col">Categorie</th>
+            <th scope="col">Detalii</th>
+            <th scope="col">Preț</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Iepuri de câmp</td>
+            <td rowspan="2">Autohton</td>
+            <td>Pentru vulturul tău vânător de elită.</td>
+            <td>60lei/kg</td>
+          </tr>
+          <tr>
+            <td>Găini Bio</td>
+            <td>It tastes like chicken.</td>
+            <td>30/kg</td>
+          </tr>
+          <tr>
+            <td>Pui de cangur</td>
+            <td>Exotic</td>
+            <td>Cine este un vultur bun?</td>
+            <td>100lei/kg</td>
+          </tr>
+          <tr>
+            <td>Viezure</td>
+            <td>Brânză, brad</td>
+            <td>Pentru vulturii imperiali romani. Ave Caesar!</td>
+            <td>200dinari/kg</td>
+          </tr>
+          <tr>
+            <td colspan="4"> PRODUSE INDISPONIBILE MOMENTAN: papagali, șoareci de câmp, marmote</td>
+          </tr>
+        </tbody>
       </table>
     </div>
-  </main>
+    <section id="iepuri" class="fade-in">
+      <h3>Iepuri de câmp.</h3>
+      <p>O sursă consacrată de proteină pentru vulturul tău. Dacă nu îi dai iepure din când în când nu îl iubești.</p>
+      <a href="#top">Înapoi sus</a>
+    </section>
 
-  <footer class="site-footer">
-    <p>
-      Numele site-ului · <a href="mailto:adresa@exemplu.ro">adresa@exemplu.ro</a>
-      · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Hartă (se deschide într-o filă nouă)</a>
-      · <a href="#top">Înapoi sus</a>
-    </p>
-    <p class="small">Laboratorul 5 · site realizat de (numele tău)</p>
-  </footer>
+    <section id="gaini" class="fade-in">
+      <h3>Găini Bio</h3>
+      <p>Pentru vulturii bătrâni se recomandă găini grase bio. Pisica nu este inclusă.</p>
+      <a href="#top">Înapoi sus</a>
+    </section>
+
+    <section id="cangur" class="fade-in">
+      <h3>Pui de cangur</h3>
+      <p>Vulturul tău nu a trăit până când nu a sfâșiat un pui de cangur. Știai că în Australia sunt mai mulți canguri
+        decât oameni? Nu pentru mult timp, dacă alegeți puii noștii de cangur suculenți.</p>
+      <a href="#top">Înapoi sus</a>
+    </section>
+    <section id="viezure" class="fade-in">
+      <h3>Viezure</h3>
+      <p>Pentru acvila ta agresivă.</p>
+      <a href="#top">Înapoi sus</a>
+    </section>
+
+    <footer class="site-footer">
+      <p>
+        <a href="index.html">vulturhaleală.food</a>
+        · <a href="mailto:mailto:alexandru.tofanel@student.unitbv.ro">alexandru.tofanel@student.unitbv.ro</a>
+        · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Hartă (se deschide într-o
+          filă nouă)</a>
+        · <a href="#top">Înapoi sus</a>
+      </p>
+      <p class="small">Laboratorul 5 · site realizat de Tofănel Alexandru.</p>
+    </footer>
 
 </body>
+
 </html>
