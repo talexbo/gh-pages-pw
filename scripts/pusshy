@@ -1,0 +1,6 @@
+#!/bin/sh
+cd ~/gits/html
+git add . && \
+git commit -m "$1" && \
+git push origin main:master && \
+git push github main
