@@ -5,7 +5,31 @@
     <title>Cursuri info, an II MI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
+        html {
+            color-scheme: light dark;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #1a1a2e;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            color: #fff;
+            padding-inline: 1rem;
+        }
+
         h1 {
+            width: 80%;
+            max-width: 100em;
+            margin: 1em auto;
             text-decoration-line: underline;
             text-align: center;
         }
@@ -16,27 +40,12 @@
             background-color: #CCCCCC;
             border-radius: 8px;
             margin-left: 1em;
-
         }
 
         .lista-centrata {
             text-align: left;
             list-style-position: inside;
             max-width: 30em;
-        }
-
-        html {
-            color-scheme: light dark;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #1a1a2e;
-            font-family: Tahoma, Verdana, Arial, sans-serif;
-            color: #fff;
         }
 
         a {
@@ -63,8 +72,9 @@
         .card,
         .card2,
         .log {
+            width: 80%;
             max-width: 100em;
-            min-width: 27em;
+            min-width: 0;
             margin-inline: auto;
             padding: 1em;
         }
@@ -94,6 +104,7 @@
             color: black;
             background: #CCCCCC;
             font-family: monospace;
+            overflow-wrap: anywhere;
         }
 
         .log a {
@@ -126,6 +137,33 @@
 
             to {
                 transform: scale(1.15);
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding-inline: 0.75rem;
+            }
+
+            h1,
+            .card,
+            .card2,
+            .log {
+                width: 100%;
+            }
+
+            p,
+            h2 {
+                max-width: 100%;
+            }
+
+            .numeclasa {
+                margin-left: 0;
+            }
+
+            .ribbon {
+                top: 3.8em;
+                right: -7em;
             }
         }
     </style>
