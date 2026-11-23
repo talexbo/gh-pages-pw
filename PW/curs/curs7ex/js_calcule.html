@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+<script>
+	function suma()
+       	{
+          		a=parseInt(document.form1.inputa.value);
+          		b=parseInt(document.form1.inputb.value);
+          		document.form1.s.value=a+b;
+       	}
+	function diferenta()
+       	{
+          		a=parseInt(document.form1.inputa.value);
+          		b=parseInt(document.form1.inputb.value);
+          		document.form1.d.value=a-b;
+       	}
+	function produs()
+       	{
+         		a=parseInt(document.form1.inputa.value);
+          		b=parseInt(document.form1.inputb.value);
+          		document.form1.p.value=a*b;
+       	}
+	function impartire()
+       	{
+          		a=parseFloat(document.form1.inputa.value);
+          		b=parseFloat(document.form1.inputb.value);
+         		document.form1.i.value=a/b;
+          		      
+       	}
+	
+</script>
+</head>
+
+<body>
+  <b>Suma, diferenta, produsul, impartirea a doua numere</b>
+  <hr>
+  <br>
+  <form name="form1">
+	a:  <input type="text" name="inputa" size="14"> 
+	b:  <input type="text" name="inputb" size="14"> <br>
+    Suma: <input type="text" name="s" size="14"> 
+	  <input type="button" value="Aduna" onClick="suma()"> <br>
+    Diferenta: <input type="text" name="d" size="14">
+	  <input type="button" value="Scade" onClick="diferenta()"> <br>
+    Produsul: <input type="text" name="p" size="14">
+	  <input type="button" value="Inmulteste" onClick="produs()"> <br>
+    Impartirea: <input type="text" name="i" size="14"> 
+	  <input type="button" value="Imparte" onClick="impartire()"> <br> 
+  </form>
+ 
+</body>
+</html>

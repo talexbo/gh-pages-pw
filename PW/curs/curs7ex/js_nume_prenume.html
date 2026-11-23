@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+   var txt = "Diana Vladescu";
+   var poz=txt.indexOf(" ");
+   document.getElementById("demo").innerHTML=poz+" Prenume: "+txt.substr(0,poz)+" Nume:" + 
+   txt.substr(poz+1,txt.length-poz);
+</script>
+
+</body>
+</html>
