@@ -5,18 +5,60 @@
 
 <head>
     <style>
-        
+
     </style>
     <script>
-    /*   document.getElementById("demo").innerHTML = "Hello JS";
-        metoda este folosita pentru afișarea elementelor pe ecran sau preloare informatiilor din formulare. 
-    */
+        /*   document.getElementById("demo").innerHTML = "Hello JS";
+            metoda este folosita pentru afișarea elementelor pe ecran sau preloare informatiilor din formulare. 
+        */
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("bulbon")) {
+                image.src = "../../img/pic_bulboff.gif";
+            } else {
+                image.src = "../../img/pic_bulbon.gif";
+            }
+        }
+        const x = 5;
+        const y = 6;
+        const z = x + y;
+          function showResult() {
+    document.getElementById("calcul").textContent = "Rezultatul este: " + z;
+  }
+        function goodDay(){
+            if (time < 18);
+
+        }
     </script>
 </head>
 
 <body>
-    <p id="demo"> JS can change HTML content</p>
-    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JS"'>
-        Click Me!
+    <p id="demo"> Ce zi este azi?</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Astăzi este LUNI"'>
+        ???
     </button>
+    <img id="myImage" onclick="changeImage()" src="../../img/pic_bulboff.gif" width="100" height="180">
+    <p>Sintaxa JS:
+        <ul>
+            <li>
+                Variabilele js sunt containere de date. Se declară cu let pt. variabile
+                și const pt. constante.
+            </li>
+            <li>Tipuri de date în JS <br>
+            Number, Bigint, String, Bool, Undefined, Null, Symbol, Object (pereche cheie valoare)
+            </li>
+            <li>Șiruri de caractere. let text = "text"</li>
+            <li>Metode pentru siruri de caractere:<br>
+            String.length, String.concat(), String.charAt()</li>
+        </ul>
+    </p>
+    <div id="calcul" onclick="showResult()">5 + 6 = ?</div>
+    <p id="paragraf"></p>
+    <script>
+        let text = "astăzi este marți";
+        document.getElementById("paragraf").innerHTML = "Lungimea textului este: " + text.length;
+        /*document.getElementById("paragraf").innerHTML = text.toUpperCase();
+        */
+    </script>
+
 </body>
