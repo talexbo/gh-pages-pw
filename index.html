@@ -63,15 +63,25 @@
         .card,
         .card2,
         .log {
-            width: 100%;
-            max-width: 80%;
-            min-width: 30em;
-            margin-right: 10%;
-            margin-left:10%;
-            padding-right: 2em;
+            width: 80%;
+            max-width: 60em;
+            min-width: 0;
+            margin-inline: auto;
+            padding: 1em;
         }
 
-        p, h2 {
+        @media (max-width: 600px) {
+
+            .card,
+            .card2,
+            .log {
+                width: calc(100% - 2em);
+            }
+        }
+
+
+        p,
+        h2 {
             width: 100%;
             max-width: 80%;
             margin-inline: auto;
@@ -138,7 +148,9 @@
     </h1>
     <h2>Programare Web</h2>
     <div class="card">
-        <a href="pdf/tutorial_gh_pages.pdf"><div class="ribbon"><span>TUTORIAL: Github Pages</span></div></a>
+        <a href="pdf/tutorial_gh_pages.pdf">
+            <div class="ribbon"><span>TUTORIAL: Github Pages</span></div>
+        </a>
         <h3 class="numeclasa">Curs:</h3>
         <ul class="lista-centrata">
             <li>Curs 2: <a href="PW/curs/curs1_formatarea.html">Exemplu Formatare HTML</a></li>
