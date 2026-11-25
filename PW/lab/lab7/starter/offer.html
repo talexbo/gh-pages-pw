@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clubul Pedala – Ofertă</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">   <!-- own CSS AFTER Bootstrap -->
+</head>
+<body>
+
+  <header class="site-header py-4" id="top">
+    <div class="container">
+      <h1 class="hero-title">Clubul Pedala</h1>
+      <p>Ciclism pentru toți: ture ușoare, prieteni și aer curat</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-md bg-body-tertiary" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Clubul Pedala</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Deschide meniul">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Despre noi</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="offer.html">Ofertă</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <h2>Ofertă: trasee și prețuri</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <caption>Traseele clubului și prețul turei (RON / persoană)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Nivel</th>
+            <th scope="col">Traseu</th>
+            <th scope="col">Distanța</th>
+            <th scope="col">Preț</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="2">Ușor</th>
+            <td>Parcul Central</td><td>12 km</td><td>20</td>
+          </tr>
+          <tr>
+            <td>Lacul din oraș</td><td>18 km</td><td>20</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">Mediu</th>
+            <td>Dealul cu pădure</td><td>35 km</td><td>40</td>
+          </tr>
+          <tr>
+            <td>Valea râului</td>
+            <td colspan="2" class="soldout">Epuizat</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Prețul include ghidul și apa. Casca este obligatorie.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <!-- TODO 4: un element HTML5 nou, ales de tine: <progress>, <meter>, <details>+<summary>, <video> sau <audio>
+         (vezi [4] în model/offer.html) -->
+
+    <!-- TODO 3: un buton care deschide un modal Bootstrap + modalul însuși
+         (vezi [3] în model/offer.html). data-bs-target="#..." trebuie să fie identic cu id-ul modalului. -->
+
+    <p><a href="contact.html" class="cta pulse">Rezervă un loc</a></p>
+  </main>
+
+  <footer class="site-footer py-3">
+    <div class="container">
+      <p>
+        Clubul Pedala · <a href="mailto:club@pedala.example">club@pedala.example</a>
+        · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Hartă (se deschide într-o filă nouă)</a>
+        · <a href="#top">Înapoi sus</a>
+      </p>
+      <p class="small">Site de pornire, Laboratorul 7 · club fictiv</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

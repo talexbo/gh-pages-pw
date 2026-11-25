@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clubul Pedala – Galerie</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">   <!-- own CSS AFTER Bootstrap -->
+</head>
+<body>
+
+  <header class="site-header py-4" id="top">
+    <div class="container">
+      <h1 class="hero-title">Clubul Pedala</h1>
+      <p>Ciclism pentru toți: ture ușoare, prieteni și aer curat</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-md bg-body-tertiary" aria-label="Main navigation">
+    <div class="container">
+      <!-- [5] Logo făcut în GIMP, în meniu: <img> cu alt, înălțime fixă -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Sigla Clubului Pedala" height="32" class="d-inline-block align-text-top">
+        Clubul Pedala
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Deschide meniul">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Despre noi</a></li>
+          <li class="nav-item"><a class="nav-link" href="offer.html">Ofertă</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <h2>Galerie</h2>
+    <p>Imagini de la ultimele ture.</p>
+    <div id="gallery-carousel" class="carousel slide" aria-label="Galerie foto">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imaginea 1"></button>
+        <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="1" aria-label="Imaginea 2"></button>
+        <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="2" aria-label="Imaginea 3"></button>
+        <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="3" aria-label="Imaginea 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/image1.png" class="d-block w-100" alt="Bicicliști pe o alee">
+        </div>
+        <div class="carousel-item">
+          <img src="images/image2.png" class="d-block w-100" alt="Bicicletă lângă gard">
+        </div>
+        <div class="carousel-item">
+          <img src="images/image3.png" class="d-block w-100" alt="Copii pe pistă">
+        </div>
+        <div class="carousel-item">
+          <img src="images/image4.png" class="d-block w-100" alt="Atelier de service">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Imaginea anterioară</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Imaginea următoare</span>
+      </button>
+    </div>
+
+    <div class="row row-cols-2 row-cols-md-3 g-3 mt-3">
+      <div class="col">
+        <div class="card lift">
+          <img src="images/image1.png" alt="Bicicliști pe o alee" class="card-img-top">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card lift">
+          <img src="images/image2.png" alt="Bicicletă lângă gard" class="card-img-top">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card lift">
+          <img src="images/image3.png" alt="Copii pe pistă" class="card-img-top">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card lift">
+          <img src="images/image4.png" alt="Atelier de service" class="card-img-top">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card lift">
+          <img src="images/image5.png" alt="Tură pe deal" class="card-img-top">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card lift">
+          <img src="images/image6.png" alt="Pauză la lac" class="card-img-top">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer py-3">
+    <div class="container">
+      <p>
+        Clubul Pedala · <a href="mailto:club@pedala.example">club@pedala.example</a>
+        · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Hartă (se deschide într-o filă nouă)</a>
+        · <a href="#top">Înapoi sus</a>
+      </p>
+      <p class="small">Model, Laboratorul 7 · club fictiv</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
