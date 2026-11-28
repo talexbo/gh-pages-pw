@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clubul Pedala – Acasă</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">   <!-- own CSS AFTER Bootstrap -->
+</head>
+<body>
+
+  <header class="site-header py-4" id="top">
+    <div class="container">
+      <h1 class="hero-title">Clubul Pedala</h1>
+      <p>Ciclism pentru toți: ture ușoare, prieteni și aer curat</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-md bg-body-tertiary" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Sigla Clubului Pedala" height="32" class="d-inline-block align-text-top">
+        Clubul Pedala
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Deschide meniul">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Despre noi</a></li>
+          <li class="nav-item"><a class="nav-link" href="offer.html">Ofertă</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <!-- [1] Link nou în meniu (la fel pe toate cele 5 pagini + pe calculator.html) -->
+          <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <img src="images/banner.gif" alt="Banner animat: o bicicletă traversează ecranul, lângă textul Pedalăm împreună în fiecare weekend" class="img-fluid w-100">
+  </div>
+
+  <main class="container my-4">
+    <section class="my-4 fade-in">
+      <h2>Pedalăm împreună</h2>
+      <p class="lead">Clubul Pedala organizează ture cu bicicleta, ușoare sau mai grele, pentru toate vârstele. Nu ai nevoie de experiență, ci doar de o bicicletă și de cască.</p>
+      <a href="contact.html" class="btn btn-success btn-lg pulse">Alătură-te</a>
+    </section>
+
+    <section class="my-4">
+      <h2>Ce găsești la noi</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 lift">
+            <img src="images/image1.png" alt="Un grup de bicicliști pe o alee din parc" class="card-img-top">
+            <div class="card-body">
+              <h3 class="h5 card-title">Ture de weekend</h3>
+              <p class="card-text">Plecăm sâmbăta dimineața, în grupuri mici.</p>
+              <a href="offer.html" class="btn btn-outline-success">Vezi traseele</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 lift">
+            <img src="images/image2.png" alt="O bicicletă sprijinită de un gard, lângă o pădure" class="card-img-top">
+            <div class="card-body">
+              <h3 class="h5 card-title">Ateliere de service</h3>
+              <p class="card-text">Învățăm să schimbăm o cameră și să reglăm frânele.</p>
+              <a href="about.html#workshops" class="btn btn-outline-success">Citește despre ateliere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 lift">
+            <img src="images/image3.png" alt="Copii care pedalează pe o pistă amenajată" class="card-img-top">
+            <div class="card-body">
+              <h3 class="h5 card-title">Ciclism pentru copii</h3>
+              <p class="card-text">Lecții de siguranță pe o pistă amenajată.</p>
+              <a href="about.html#safety" class="btn btn-outline-success">Reguli de siguranță</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-3">
+    <div class="container">
+      <p>
+        Clubul Pedala · <a href="mailto:club@pedala.example">club@pedala.example</a>
+        · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Hartă (se deschide într-o filă nouă)</a>
+        · <a href="#top">Înapoi sus</a>
+      </p>
+      <p class="small">Model, Laboratorul 8 · club fictiv</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

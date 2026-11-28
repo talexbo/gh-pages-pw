@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clubul Pedala – Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">   <!-- own CSS AFTER Bootstrap -->
+</head>
+<body>
+
+  <header class="site-header py-4" id="top">
+    <div class="container">
+      <h1 class="hero-title">Clubul Pedala</h1>
+      <p>Ciclism pentru toți: ture ușoare, prieteni și aer curat</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-md bg-body-tertiary" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Sigla Clubului Pedala" height="32" class="d-inline-block align-text-top">
+        Clubul Pedala
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Deschide meniul">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Despre noi</a></li>
+          <li class="nav-item"><a class="nav-link" href="offer.html">Ofertă</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <h2>Contact</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100 lift">
+          <div class="card-body">
+            <h3 class="h5 card-title">Scrie-ne sau sună-ne</h3>
+            <p class="card-text">E-mail: <a href="mailto:club@pedala.example">club@pedala.example</a></p>
+            <p class="card-text">Telefon: <a href="tel:+40268000111">0268 000 111</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 lift">
+          <div class="card-body">
+            <h3 class="h5 card-title">Unde ne întâlnim</h3>
+            <p class="card-text">Sâmbăta la 9:00, la intrarea în parc.</p>
+            <p class="card-text"><a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Vezi pe hartă (filă nouă)</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="my-4" id="inscriere">
+      <h3>Înscriere la o tură</h3>
+      <form action="contact.html" method="get">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="fullname" class="form-label">Nume și prenume</label>
+            <input type="text" class="form-control" id="fullname" name="fullname" required minlength="3" autocomplete="name">
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Telefon (10 cifre)</label>
+            <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" title="Introdu exact 10 cifre, fără spații" required>
+          </div>
+          <div class="col-md-6">
+            <label for="tourdate" class="form-label">Data turei</label>
+            <input type="date" class="form-control" id="tourdate" name="tourdate" required>
+          </div>
+          <div class="col-md-6">
+            <label for="level" class="form-label">Nivelul turei</label>
+            <select class="form-select" id="level" name="level" required>
+              <option value="" selected disabled>Alege nivelul</option>
+              <option value="usor">Ușor</option>
+              <option value="mediu">Mediu</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Mesaj</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required minlength="10"></textarea>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rules" name="rules" required>
+              <label class="form-check-label" for="rules">Am citit regulile de siguranță</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-success">Trimite înscrierea</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer py-3">
+    <div class="container">
+      <p>
+        Clubul Pedala · <a href="mailto:club@pedala.example">club@pedala.example</a>
+        · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Hartă (se deschide într-o filă nouă)</a>
+        · <a href="#top">Înapoi sus</a>
+      </p>
+      <p class="small">Site de pornire, Laboratorul 8 · club fictiv</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -216,6 +216,7 @@
             <li>Lab 5: <a href="PW/lab/lab5/index.html">Temă</a></li>
             <li>Lab 6: <a href="PW/lab/lab6/model/index.html">Model</a></li>
             <li>Lab 7: <a href="PW/lab/lab7/model/index.html">Model;</a> <a href="PW/lab/lab7/starter/index.html">Temă</a></li>
+            <li>Lab 8: <a href="PW/lab/lab8/model/index.html">Model;</a> <a href="PW/lab/lab8/starter/index.html">Temă</a></li>
         </ul>
     </div>
     <h2>Soft Matematic</h2>
@@ -231,46 +232,25 @@
     </iframe>-->
     <div class="log">
         <h4>Log:</h4>
-        <ul>
-            <li>12/10 - Am reparat sync-ul automat dintre PC și serverul nginx; Am adăugat exemplul din cursul 1,
-                modificat
-                pt. că pe elearning era embedded și moștenea css de la elearning.</li>
-            <li>13/10 - 14:10 START </li>
-            <li>14/10 - Am adaugat un exemplu parse-unit cu pandoc de mamrkdown convertit în html și embeduit cu <
-                    iframe ...> în pagina HTML</li>
-            <li>15/10 - Am schimbat serverele de nginx și gitea din termux pe proot de debian pe termux. Asta a rezolvat
-                o
-                eroare la gitea. Pe lângă asta, acum /var/www se actualizează periodic cu $git fetch din repo-ul <a
-                    href="https://git.alexbogdan.tech/html/tree">https://git.alexbogdan.tech/html</a> printr-un
-                cronjob.
-            </li>
-            <li>20/10 - Am trecut de la pandoc md convertit în html la mk4ht htlatex document.tex și rendează ecuațiile
+        <p>
+            12/10 - Am reparat sync-ul automat dintre PC și serverul nginx;<br>
+            13/10 - 14:10 START<br>
+            14/10 - Am adaugat un exemplu parse-unit cu pandoc de mamrkdown convertit în html și embeduit cu <
+                    iframe ...> în pagina HTML<br>
+            15/10 - Am schimbat serverele de nginx și gitea din termux pe proot de debian pe termux. Asta a rezolvat o
+                eroare la gitea. Pe lângă asta, acum /var/www se actualizează periodic cu $git fetch din repo-ul 
+                    <a href="https://git.alexbogdan.tech/html/tree">https://git.alexbogdan.tech/html</a> printr-un
+                cronjob.<br>
+            20/10 - Am trecut de la pandoc md convertit în html la mk4ht htlatex document.tex și rendează ecuațiile
                 în
-                imagini înainte să le așeze în HTML. În schimb o să continui să scriu iframe-uri în markdown.</li>
-            <li>02/11 - Proiect ultimul lab din ianuarie, min 5 sectiuni (pagini)... elearning, etc.<br>
-                - Am mutat site-ul pe un rpi4 dar am opțiunea de a porni oricând tunelul și daemon-urile de pe telefon
-                ca și
-                backup.</li>
-            <li>06/11 - Nu mai folosesc gitea am setat ssh prin tunel cloudflare și dau $git push direct prin ssh
-                într-un
-                remote
-                de pe server. după care un script cu cronjob imi arhivează repo-ul bare de pe server in /var/www/html"
-                De asemenea nu mai folosesc OpenBSD ci Alpine Linux, motiv pentru care am renunțat la Gitea, folosea
-                prea
-                mult RAM și
-                nu aveam nevoi de toate funcțiile lui, iar Alpine Linux rulează în diskless mode, adică tot root-ul este
-                încărcat într-un
-                tmpfs în RAM la boot, de aici nevoia de a economisi RAM, la schimb sistemul actual reduce
-                read/write-urile
-                pe disk, / fiind in ram până la
-                poweroff.
-            </li>
-            <li>22/11 - Am creat un backup al paginii ăsteia cu github pages la adresa <a
-                    href="https://talexbo.github.io/gh-pages-pw/">https://talexbo.github.io/gh-pages-pw/</a>
-                din remote-ul <a
-                    href="https://github.com/talexbo/gh-pages-pw">https://github.com/talexbo/gh-pages-pw</a>
-            </li>
-        </ul>
+                imagini înainte să le așeze în HTML. În schimb o să continui să scriu iframe-uri în markdown.<br>
+            02/11 - Proiect ultimul lab din ianuarie, min 5 sectiuni (pagini)... elearning, etc. Am mutat site-ul pe un rpi4 dar am opțiunea de a porni oricând tunelul și daemon-urile de pe telefon
+                ca și backup.<br>
+            06/11 - Nu mai folosesc gitea am setat ssh prin tunel cloudflare și dau $git push direct prin ssh într-un remote de pe server. după care un script cu cronjob imi arhivează repo-ul bare de pe server in /var/www/html". De asemenea nu mai folosesc OpenBSD ci Alpine Linux, motiv pentru care am renunțat la Gitea, folosea prea mult RAM și nu aveam nevoi de toate funcțiile lui, iar Alpine Linux rulează în diskless mode, adică tot root-ul este încărcat într-un tmpfs în RAM la boot, de aici nevoia de a economisi RAM, la schimb sistemul actual reduce read/write-urile pe disk, / fiind in ram până la poweroff.<br>
+            22/11 - Am creat un backup al paginii ăsteia cu github pages la adresa 
+                    <a href="https://talexbo.github.io/gh-pages-pw/">https://talexbo.github.io/gh-pages-pw/</a> din remote-ul 
+                    <a href="https://github.com/talexbo/gh-pages-pw">https://github.com/talexbo/gh-pages-pw</a>
+        </p>
     </div>
     <p style="color:black; background-color:#CCCCCC; font-family: monospace">Acest site <s> este host-uit pe un telefon
             mobil.</s> este host-uit pe un SoC cu <s>OpenBSD</s> Alpine Linux, dar pot să folosesc la nevoie telefonul
